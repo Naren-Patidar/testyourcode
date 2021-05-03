@@ -1,0 +1,105 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.TableRow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2vw 2vw 15vw 8vw 8vw 8vw 8vw 8vw 10vw;
+  grid-template-columns: 2vw 2vw 15vw 8vw 8vw 8vw 8vw 8vw 10vw;
+  position: relative;
+  cursor: pointer;
+  font-family: $bold;
+  font-size: 0.75rem;
+  -ms-grid-column-align: center;
+  justify-items: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  min-height: 1.5rem;
+  max-height: 5rem;
+  // height: 3.5vh;
+  font-family: $medium;
+  font-size: 0.65rem;
+  color: #f0f0f0;
+  .approval_column {
+    text-align: center;
+    @supports (display: grid) {
+      text-align: start;
+    }
+  }
+  .ui.checkbox {
+    padding-left: 2.5rem;
+    @supports (display: grid) {
+      padding-left: 0.1rem;
+    }
+  }
+  .TableRow_dot {
+    height: 8px;
+    width: 8px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .TableRow-popup {
+    background-color: $whiteColor !important;
+    color: $greyBackgroundColor;
+    border-radius: 4px;
+    height: 5vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    // width: 100%;
+    background-color: grey;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+    z-index: 1000;
+    .TableRow-popup-details {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-column-align: start;
+      justify-items: start;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      -ms-grid-row-align: center;
+      align-items: center;
+      padding: 0.25rem;
+    }
+  }
+  .ui.checkbox {
+    font-family: 'Honeywell Sans Web', Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #e0e0e0;
+    min-height: 1rem;
+    display: grid;
+    display: -ms-grid;
+    /* margin: 0 .75rem .75rem 0; */
+  }
+}
+.TableRow:hover {
+  background-color: $hoverBgColor;
+}
+
+.span_new {
+  position: relative;
+  padding: 1px;
+  span {
+    position: absolute;
+    left: 0.5px;
+    top: 0.2px;
+    color: #202020;
+    background-color: #ffc627;
+    padding: 2px;
+    font-size: xx-small;
+    font-weight: bold;
+    border-radius: 3px;
+    font-family: $medium;
+  }
+}

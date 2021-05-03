@@ -1,0 +1,32 @@
+@import "../../../../assets/stylesheets/colors.scss";
+@import "../../../../assets/stylesheets/fonts.scss";
+
+.approval-screen {
+    .change-log {
+        width: 100% !important;
+        height: 80vh;
+        overflow: hidden;
+        background: #303030 !important;
+        .header {
+            .header-content h6 {
+              font-size: 1rem;
+            }
+        }
+        .ui.tree {
+            width: 100%;
+            height: 100%;
+            .tree-content {
+                height: 72vh;
+                overflow-y: auto;
+                .tree-item {                    
+                    .child-open {
+                        min-width: unset;                        
+                    }
+                    .content {
+                        padding: 0;
+                    }
+                } 
+            }
+        }
+    }
+}

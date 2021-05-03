@@ -1,0 +1,52 @@
+.campaign-details {
+  .campaign-header {
+    display: flex;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #808080;
+    .name-header {
+      width: 150px;
+      padding-right: 1.5rem;
+    }
+    .id-header {
+      width: 150px;
+      padding-left: 1.5rem;
+    }
+  }
+
+  .campaign-details-header {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #c0c0c0;
+    .campaign-name {
+      padding-right: 1.5rem;
+      width: 150px;
+    }
+    .campaign-refId {
+      padding-left: 1.5rem;
+      border-left: 2px solid #c0c0c0;
+      width: 150px;
+    }
+  }
+  .running-campaign {
+    color: #4dbc48;
+    padding-left: 0.56rem;
+  }
+  .paused-campaign {
+    color: #fec62d;
+    padding-left: 0.56rem;
+  }
+  .terminated-campaign {
+    color: #c746a1;
+    padding-left: 0.56rem;
+  }
+  .completed-campaign {
+    color: #a0a0a0;
+    padding-left: 0.56rem;
+  }
+  .campaign-state {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}

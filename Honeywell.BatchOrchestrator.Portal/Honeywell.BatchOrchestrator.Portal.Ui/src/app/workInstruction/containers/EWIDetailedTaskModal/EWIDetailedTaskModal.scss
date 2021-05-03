@@ -1,0 +1,196 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.ui.modal.wi-instructionset-modal {
+  left: 20%;
+  .header {
+    padding-bottom: 5px;
+  }
+  .scrolling.content {
+    .draggable-container {
+      width: 100%;
+      height: 40vh;
+      overflow-y: auto;
+      border: 1px solid #505050;
+      border-radius: 10px;
+      padding: 10px;
+      .checklist-title {
+        .ui.radio.checkbox {
+          margin: 0 10px 0 0;
+          label:before {
+            top: 12px;
+          }
+        }
+        .single-input {
+          .below-text {
+            display: none;
+          }
+          &.error {
+            border: 0px solid transparent !important;
+            .input-wrap {
+              border: 2px solid #ff644c !important;
+            }
+            .below-text {
+              display: block;
+            }
+          }
+          .btn-secondary {
+            width: 100%;
+            text-align: initial;
+            background: $hoverBgColor;
+            border-radius: 1.8px;
+            border: none;
+            position: relative;
+            &:focus {
+              box-shadow: none;
+              background-color: #202020;
+            }
+          }
+        }
+        .edit-checklist-title {
+          .input-box {
+            border-radius: 0 !important;
+          }
+        }
+      }
+      .instruction-set {
+        padding: 10px 0px 10px 31px;
+        .ui.list {
+          .item {
+            position: relative;
+            .content {
+              display: flex;
+              align-items: baseline;
+              .header {
+                display: none;
+              }
+              .task-actions {
+                display: none;
+                position: absolute;
+                right: 15px;
+                top: 2px;
+                color: #fff !important;
+                padding: 5px 5px 6px 3px;
+                background-color: #000000a6;
+                z-index: 100;
+                .h-icon.common {
+                  color: #fff;
+                  padding: 0 6px;
+                  cursor: pointer;
+                }
+                .drag-icon {
+                  transform: rotate(90deg);
+                }
+              }
+              &:hover {
+                .task-actions {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .input-instructionset {
+          width: 100%;
+          .input-description-text {
+            width: auto;
+            display: inline-block;
+            margin: 0;
+          }
+          .ui.single-input.input-text-input > .input-wrap > input {
+            height: auto;
+            padding: 0;
+          }
+          .ui.single-input.input-text-parameter > .input-wrap > input {
+            width: 30px;
+            height: auto;
+            padding: 0;
+            text-align: center;
+          }
+          .ui.single-input.parameter > .input-wrap > input {
+            width: 50px;
+            height: auto;
+            padding: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .draggable-container-active {
+      background-color: $greyBorderColor;
+    }
+
+    .control-pallet {
+      &.reached-maxnum {
+        .drag-item {
+          &.instruction-set-item {
+            pointer-events: none;
+            opacity: 0.5;
+          }
+        }
+      }
+      .drag-item {
+        float: left;
+        &.text-color {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_colourChange.svg');
+        }
+        &.text-bold {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_bold.svg');
+        }
+        &.text-italic {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_italic.svg');
+        }
+        &.text-underline {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_underline.svg');
+        }
+        &.text-box {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_textblock.svg');
+        }
+        &.icon-bulletlist {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_bulletlist.svg');
+        }
+        &.icon-batchInput {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_batchInput.svg');
+        }
+        &.icon-checkbox {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_checkbox.svg');
+        }
+        &.icon-experionpoint {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_experionPoint.svg');
+        }
+        &.icon-select {
+          background-image: url('../../../../assets/icons/controlPalletIcons/icons_palette_Select.svg');
+        }
+        &.icon-image {
+          background-image: url('../../../../assets/icons/controlPalletIcons/Image.svg');
+        }
+        &.icon-video {
+          background-image: url('../../../../assets/icons/controlPalletIcons/Video.svg');
+        }
+        background-repeat: no-repeat;
+        padding: 20px 35px 18px 18px;
+        background-position: center;
+        &:hover {
+          background-color: #0000002e;
+          cursor: grab;
+        }
+        &:active {
+          cursor: grabbing;
+        }
+      }
+      background: #303030;
+      border-radius: 10px;
+      box-shadow: 0px 2px 30px 2px rgba(0, 0, 0, 0.33);
+      margin: 10px auto;
+      height: 131px;
+      width: 71%;
+      padding: 10px;
+      .drag-item-active {
+        background-color: $greyBorderColor;
+      }
+    }
+  }
+}

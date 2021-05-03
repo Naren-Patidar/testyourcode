@@ -1,0 +1,62 @@
+@import '../../../../assets/stylesheets/fonts.scss';
+@import '../../../../assets/stylesheets/colors.scss';
+
+.accordion-scrolling-content {
+  overflow-y: auto;
+  height: 38vh;
+  overflow-x: hidden;
+  position: relative;
+  .enforce-order {
+    position: relative;
+    display: inline-block;
+    left: 30%;
+    top: -5px;
+    .ui.toggle.checkbox {
+      margin: 0;
+      input ~ label {
+        margin-bottom: 0;
+        top: 9px;
+        &:before {
+          border: 1px solid transparent !important;
+          background-color: #808080 !important;
+        }
+        &:after {
+          background: #000 !important;
+          border: 1px solid #000 !important;
+        }
+      }
+      &.checked {
+        input:checked ~ label:before {
+          border: 1px solid transparent !important;
+          background-color: #1274b7 !important;
+        }
+      }
+    }
+  }
+}
+.ewi-description-container, .accordion-scrolling-content {
+  .accordion.ui.fluid {
+    &:not(.styled) .title ~ .content:not(.ui) {
+      padding-left: 0rem !important;
+    }
+    .title {
+      padding-left: 1.5rem !important;
+      padding-bottom: 0 !important;
+      position: relative;
+      font-size: 14px !important;
+      .root-icon.left {
+        padding-right: 0.5rem;
+        position: absolute;
+        left: 0;
+      }
+      .bRtwEk:before {
+        content: '\ea57';
+      }
+      .bRAqJS:before {
+        content: '\ea59';
+      }
+    }
+  }
+}
+
+

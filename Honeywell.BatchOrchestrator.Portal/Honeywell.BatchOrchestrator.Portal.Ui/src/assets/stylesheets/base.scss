@@ -1,0 +1,81 @@
+@import './helpers.scss';
+@import './colors.scss';
+@import './fonts.scss';
+@import '../fonts/hw-abpm-icons.scss';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  @include box-sizing();
+  font-size: 0.875rem;
+  color: #fff;
+  // background-color: $pageBackgroundColor;
+  font-family: $medium; 
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.no-link-action {
+  pointer-events: none;
+}
+
+/* Disables the selection */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.icon{
+  font-size: 0.875rem; 
+}
+
+/* Disables the drag event */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.required::after {
+  content: ' *';
+  color: $invalidInputBorderColor;
+}
+.cursorMove {
+  cursor: move;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background: transparent;
+}
+
+::-moz-selection {
+  background: transparent;
+}

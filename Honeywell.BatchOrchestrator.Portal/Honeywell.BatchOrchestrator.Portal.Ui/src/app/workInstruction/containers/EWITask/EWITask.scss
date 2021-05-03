@@ -1,0 +1,78 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.ewi-tasklist {
+  .ui.list {
+    .item {
+      .content {
+        display: flex;
+        align-items: baseline;
+        .header {
+          display: none;
+        }
+        .draggable-task {
+          width: 100%;
+        }
+        .ui.radio.checkbox {
+          margin: 0 10px 0 0;
+        }
+        .btn-secondary {
+          width: 70%;
+          text-align: initial;
+          background: $hoverBgColor;
+          color: #e0e0e0 !important;
+          border-radius: 1.8px;
+          border: none;
+          position: relative;
+          word-break: break-all;
+          &:focus {
+            box-shadow: none;
+          }
+          .task-actions {
+            display: none;
+            position: absolute;
+            right: 5px;
+            top: 2px;
+            color: #fff;
+            padding: 3px 5px 5px 3px;
+            background-color: #000000a6;
+            .h-icon.common {
+              color: #fff;
+              padding: 0 6px;
+              cursor: pointer;
+              &.delete-disabled {
+                opacity: 0.5;
+                cursor: default;
+              }
+            }
+            .drag-icon {
+              transform: rotate(90deg);
+            }
+          }
+          @media all and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+            .task-actions {
+              background-color: #000000;
+            }
+          }
+          &:hover {
+            .task-actions {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .error-msg {
+    color: #ff644c;
+    font-size: 0.75rem;
+  }
+  .add-taskbtn {
+    font-size: 14px;
+    cursor: pointer;
+    &.addtask-disabled {
+      opacity: 0.5;
+    }
+  }
+}

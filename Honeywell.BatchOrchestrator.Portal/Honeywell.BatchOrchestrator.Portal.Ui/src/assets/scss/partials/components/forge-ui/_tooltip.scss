@@ -1,0 +1,12 @@
+html.honeywell-dark-theme {
+  .ui.tooltip {
+    background: #303030 !important;
+    color: #d0d0d0 !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.3);
+    &::before {
+      background: #303030 !important;
+    }
+  }
+}

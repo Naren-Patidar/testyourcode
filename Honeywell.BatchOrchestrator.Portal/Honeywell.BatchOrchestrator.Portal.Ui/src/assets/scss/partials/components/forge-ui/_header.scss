@@ -1,0 +1,12 @@
+html.honeywell-dark-theme {
+  .ui.page-header {
+    background: #202020 !important;
+    border-bottom: #202020 !important;
+    .page-header-menu.ui.menu {
+      .main-logo {
+        background-image: url(../../../../img/honeywell-logo-white.svg) !important;
+        /* background: url(./assets/img/honeywell-logo-white.svg) !important; */
+      }
+    }
+  }
+}

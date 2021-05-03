@@ -1,0 +1,62 @@
+.CampaignProgressBar {
+  margin-bottom: 1rem;
+  [class~='scuf-grid'][class~='col'],
+  [class~='scuf-grid'][class*='col-'],
+  [class~='scuf-grid'][class*='col_'],
+  [class*='scuf-grid-'][class~='col'],
+  [class*='scuf-grid-'][class*='col-'],
+  [class*='scuf-grid-'][class*='col_'],
+  [class*='scuf-grid_'][class~='col'],
+  [class*='scuf-grid_'][class*='col-'],
+  [class*='scuf-grid_'][class*='col_'] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  [class~='col'],
+  [class*='col-'],
+  [class*='col_'] {
+    padding: 0 0 !important;
+  }
+  .ui.progress {
+    height: 0 rem !important;
+  }
+  .completed-percentage {
+    // float: right;
+    // margin-right: 11rem;
+  }
+  .completed-batch-number {
+    // float: right;
+    // margin-right: 11rem;
+    color: #c0c0c0;
+    .batch-number {
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+    }
+    .batch-text {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .play-pause-icon {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .campaign-progress {
+    padding-top: 0.75rem;
+    .bars-wrapper {
+      border-radius: 8px !important;
+      height: 0.5rem !important;
+      .bar {
+        border-radius: 8px !important;
+        .progress-text {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+// html.honeywell-dark-theme .scuf-progress-wrapper.xlarge .bar {
+//   height: 0.75rem !important;
+// }

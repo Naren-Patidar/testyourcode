@@ -1,0 +1,19 @@
+.resolve-conflict {
+    .link-text {
+        color:#1792E5 !important;
+        cursor: pointer !important;
+    }
+    .conflict-text {
+      color:#e0233c !important;
+      cursor: pointer !important;
+    }
+    .ui.striped.table {
+        border: #151515 0.0625rem solid;
+        thead{
+          th {
+            border-top: none;
+            border-bottom: #151515 0.0625rem solid;
+          }
+        }
+    }
+}

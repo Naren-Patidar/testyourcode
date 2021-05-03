@@ -1,0 +1,32 @@
+//
+// Main Styles
+//
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+// 1: Initialize
+@import 'init';
+
+// 2: Bootstrap/Material framework includes
+@import '~bootstrap/scss/bootstrap';
+
+// 3: Utilities
+@import 'partials/utilities';
+
+// 4: Components
+@import 'partials/components/button', 'partials/components/forge-ui/button',
+  'partials/components/forge-ui/breadcrumbs',
+  'partials/components/forge-ui/grid', 'partials/components/forge-ui/tooltip',
+  'partials/components/forge-ui/card', 'partials/components/forge-ui/footer',
+  'partials/components/forge-ui/header',
+  'partials/components/forge-ui/scrollbar',
+  'partials/components/forge-ui/sidebar',
+  'partials/components/forge-ui/dropdown', 'partials/components/forge-ui/forms',
+  'partials/components/forge-ui/datatable',
+  'partials/components/forge-ui/accordion',
+  'partials/components/forge-ui/vertical-menu',
+  'partials/components/forge-ui/modal', 'partials/components/modal',
+  'partials/components/forge-ui/checkbox', 'partials/components/forge-ui/badge',
+  'partials/components/forge-ui/more-actions', 'partials/components/progress',
+  'partials/components/forge-ui/toggle';

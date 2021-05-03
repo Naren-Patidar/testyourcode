@@ -1,0 +1,571 @@
+html {
+  font-family: 'Honeywell Sans Web_Medium', 'Helvetica Neue', 'Arial',
+    sans-serif;
+  line-height: 1.4 !important;
+  letter-spacing: -0.1px !important;
+}
+
+body {
+  font-size: 14px;
+  //font-size: 2.5rem;
+}
+
+html,
+body {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+i {
+  font-style: normal !important;
+}
+
+// // Headings
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// .h1,
+// .h2,
+// .h3,
+// .h4,
+// .h5,
+// .h6 {
+//   font-weight: normal;
+// }
+
+// h1,
+// .h1 {
+//   font-size: 1.9rem;
+// }
+
+// h2,
+// .h2 {
+//   font-size: 1.75rem;
+// }
+
+// h3,
+// .h3 {
+//   font-size: 1.5rem;
+// }
+
+// h4,
+// .h4 {
+//   font-size: 15px;
+// }
+
+// h5,
+// .h5 {
+//   font-size: 13px;
+// }
+
+// h6,
+// .h6 {
+//   font-size: 12px;
+// }
+
+// Headings
+.h1 {
+  @include font-size($h1-font-size, true);
+}
+.h2 {
+  @include font-size($h2-font-size, true);
+}
+.h3 {
+  @include font-size($h3-font-size, true);
+}
+.h4 {
+  @include font-size($h4-font-size, true);
+}
+.h5 {
+  @include font-size($h5-font-size, true);
+}
+.h6 {
+  @include font-size($h6-font-size, true);
+}
+
+.headline {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 16px;
+}
+
+.headline-force {
+  font-weight: 400;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  margin: 0 0 16px;
+}
+
+.sub-heading-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 16px;
+}
+
+.sub-heading-1-force {
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  margin: 0 0 16px;
+}
+
+.sub-heading-2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.sub-heading-2-force {
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 28px !important;
+}
+
+// Lead
+.lead {
+  @include font-size($lead-font-size, true);
+}
+
+// Type display classes
+.display-1 {
+  @include font-size($display1-size, true);
+}
+.display-2 {
+  @include font-size($display2-size, true);
+}
+.display-3 {
+  @include font-size($display3-size, true);
+}
+.display-4 {
+  @include font-size($display4-size, true);
+}
+
+// Theme Colors
+@each $name, $color in $theme-text-colors {
+  // Base color
+  .text-#{$name} {
+    color: $color !important;
+  }
+
+  // Inverse color
+  .text-inverse-#{$name} {
+    color: theme-inverse-color($name) !important;
+  }
+
+  // Light colors
+  .text-light-#{$name} {
+    color: theme-light-color($name) !important;
+  }
+
+  // Text hover
+  a.text-hover-#{$name},
+  .text-hover-#{$name} {
+    transition: $transition-link;
+
+    &:hover {
+      transition: $transition-link;
+      color: $color !important;
+
+      i {
+        color: $color !important;
+      }
+
+      .svg-icon {
+        @include svg-icon-color($color);
+      }
+    }
+  }
+
+  // Parent hover
+  .hoverable {
+    &:hover {
+      a.text-hover-#{$name},
+      .text-hover-#{$name} {
+        transition: $transition-link;
+        color: $color !important;
+
+        i {
+          color: $color !important;
+        }
+
+        .svg-icon {
+          @include svg-icon-color($color, true);
+        }
+      }
+    }
+  }
+}
+
+// Link transition
+a {
+  transition: $transition-link;
+
+  &:hover {
+    transition: $transition-link;
+  }
+}
+
+// Reset global outline
+a,
+button {
+  outline: 0 !important;
+}
+
+// Links
+a {
+  text-decoration: none;
+}
+
+// Abbr
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.54);
+}
+
+// Blockquote
+blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.12);
+  font-style: italic;
+  margin: 1em 0;
+  padding-left: 16px;
+
+  footer {
+    font-style: normal;
+
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+
+  &.reverse {
+    border-left: none;
+    border-right: 3px solid rgba(0, 0, 0, 0.12);
+    text-align: right;
+    padding-left: 0;
+    padding-right: 16px;
+
+    footer {
+      &:before {
+        content: '';
+      }
+
+      &:after {
+        content: '\2014 \00A0';
+      }
+    }
+  }
+}
+
+// Code
+code {
+  font-family: 'Monaco', 'Menlo', 'Consolas', 'Ubuntu Mono', monospace;
+
+  &:not(.highlight) {
+    color: #106cc8;
+    padding: 2px 3px;
+    border-radius: 2px;
+    line-height: 1.7;
+  }
+}
+
+// Definition lists
+dl {
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin: 4px 0 16px 0;
+  }
+}
+
+// Mark
+mark {
+  background: #f7f49a;
+}
+
+// Pre
+pre {
+  line-height: 1.6;
+  margin: 8px 16px;
+  white-space: pre-wrap;
+}
+
+// Small
+small {
+  font-size: 80%;
+}
+
+// Table
+table {
+  thead {
+    tr {
+      th {
+        text-align: left;
+      }
+    }
+  }
+}
+
+//Control groups
+.control-group {
+  display: flex;
+  align-items: center;
+
+  .append-label {
+    padding: 4px 8px;
+  }
+}
+
+// Text format helpers
+.text-italic {
+  font-style: italic;
+}
+
+.text-semibold {
+  font-weight: 600 !important;
+}
+
+.text-bold,
+strong {
+  font-weight: 700 !important;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+.text-normal-force {
+  font-weight: normal !important;
+}
+
+.text-strike {
+  text-decoration: line-through;
+}
+
+.text-super {
+  vertical-align: super;
+}
+
+.text-sub {
+  vertical-align: sub;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+// Text stroke
+.text-stroke {
+  -webkit-text-stroke-width: 0.35rem;
+  -moz-text-stroke-width: 0.35rem;
+  text-stroke-width: 0.35rem;
+  -webkit-text-stroke-color: $white;
+  -moz-text-stroke-color: $white;
+  text-stroke-color: $white;
+}
+
+// Text align helpers
+.text-left {
+  text-align: left;
+}
+
+.text-left-force {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center-force {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-right-force {
+  text-align: right !important;
+}
+
+// Truncate
+.text-truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-truncate-no-block {
+  // display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flex-child-text-truncate {
+  flex: 1;
+  &,
+  & > * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+// Nowrap
+.text-nowrap {
+  white-space: nowrap;
+}
+
+// Font weight helpers
+@for $weight from 1 through 9 {
+  .font-weight-#{$weight * 100} {
+    font-weight: #{$weight * 100};
+  }
+}
+
+// Font sizes
+.font-size-base {
+  font-size: $font-size-base;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg;
+}
+
+// Responsive font sizes
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $name, $value in $font-sizes {
+      .#{$name}#{$infix} {
+        font-size: $value !important;
+      }
+    }
+  }
+}
+
+// Boldest font
+.font-weight-boldest {
+  font-weight: $font-weight-boldest;
+}
+
+// Font size helpers
+@for $size from 1 through 120 {
+  .font-size-#{$size} {
+    font-size: #{$size}px;
+  }
+
+  .font-size-#{$size}-force {
+    font-size: #{$size}px !important;
+  }
+
+  .font-size-l#{$size}-rem {
+    font-size: #{$size * 0.5 * 0.25}rem;
+  }
+
+  .font-size-l#{$size}-rem-force {
+    font-size: #{$size * 0.5 * 0.25}rem !important;
+  }
+}
+
+// Line heights
+.line-height-0 {
+  line-height: 0 !important;
+}
+
+.line-height-xs {
+  line-height: 0.75 !important;
+}
+
+.line-height-sm {
+  line-height: 1 !important;
+}
+
+.line-height-md {
+  line-height: 1.25 !important;
+}
+
+.line-height-lg {
+  line-height: 1.5 !important;
+}
+
+.line-height-xl {
+  line-height: 1.75 !important;
+}
+
+// Line height helpers
+@for $lineHeight from 1 through 60 {
+  .line-height-#{$lineHeight} {
+    line-height: #{$lineHeight}px;
+  }
+
+  .line-height-#{$lineHeight}-force {
+    line-height: #{$lineHeight}px !important;
+  }
+
+  .line-height-#{$lineHeight}-hs {
+    line-height: #{$lineHeight * 0.5};
+  }
+
+  .line-height-#{$lineHeight}-hs-force {
+    line-height: #{$lineHeight * 0.5} !important;
+  }
+}
+
+// Letter spacing helpers
+.letter-spacing-condensed {
+  letter-spacing: -0.02rem;
+}
+
+.letter-spacing-normal {
+  letter-spacing: normal;
+}
+
+.letter-spacing-compact {
+  letter-spacing: 0.025rem;
+}
+
+.letter-spacing-relaxed {
+  letter-spacing: 0.05rem;
+}
+
+@for $letterSpacing from 1 through 50 {
+  .letter-spacing-l#{$letterSpacing} {
+    letter-spacing: #{($letterSpacing * 0.025)}rem;
+  }
+
+  .letter-spacing-l#{$letterSpacing}-force {
+    letter-spacing: #{($letterSpacing * 0.025)}rem !important;
+  }
+}
+
+// Text transparent
+.text-transparent {
+  color: transparent;
+}

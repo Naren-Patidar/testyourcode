@@ -1,0 +1,304 @@
+@import '../../../assets/stylesheets/colors.scss';
+@import '../../../assets/stylesheets/fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.modalPopup {
+  width: 60vw !important;
+  min-height: 70vh !important;
+  position: relative !important;
+  .modalPopup-header {
+    float: left;
+  }
+  .modalPopup-content {
+    position: absolute !important;
+    top: 7vh !important;
+    width: 96% !important;
+    min-height: 70vh !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .setPopupForIE {
+    top: 10rem !important;
+    left: 14.5rem !important;
+  }
+}
+.FormulaSetCard {
+  padding: 1rem 2rem 1rem 0;
+  flex: 0 1 100%;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 768px) {
+  .FormulaSetCard {
+    padding: 1rem 3rem 1rem 0;
+    flex: 0 1 calc(50%);
+  }
+}
+
+@media (min-width: 1080px) {
+  .FormulaSetCard {
+    padding: 1rem 3rem 1rem 0;
+    flex: 0 1 calc(33.33%);
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+  .FormulaSetCard {
+    padding: 1rem 2rem 1rem 0;
+    flex: 0 1 calc(25%);
+  }
+}
+
+@media (min-width: 1921px) {
+  .FormulaSetCard {
+    flex: 0 1 calc(20%);
+  }
+}
+.FormulaSetCard {
+  .FormulaSetCard-card {
+    cursor: pointer;
+    background-color: #303030;
+    border-radius: 10px;
+    height: 250px;
+    /* position: relative; */
+    /* margin-right: 1rem; */
+
+    .popupActions {
+      position: absolute;
+      top: 22%;
+      /* right: 0rem; */
+      left: 22%;
+      height: 7rem;
+      width: 14rem;
+      z-index: 100;
+      background: #404040;
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-evenly; */
+      /* grid-template-columns: 1fr; */
+      font-family: 'HoneywellSans-Medium';
+      font-size: 1rem;
+      color: #f0f0f0;
+      .popupActions-div {
+        cursor: pointer;
+        margin: 0.25rem 0;
+      }
+    }
+    .imagePopup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 12vw;
+      width: 30vw;
+      z-index: 100;
+      background: $hoverBgColor;
+      border-radius: 10px;
+      padding: 1vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      font-family: $medium;
+      font-size: 1vw;
+      // grid-auto-rows: 2vw;
+      .closePopup {
+        display: grid;
+        justify-self: end;
+      }
+      .imageUploadDiv {
+        display: grid;
+        display: -ms-grid;
+        justify-self: center;
+        -ms-grid-column-align: center;
+      }
+      .uploadImageDetailsDiv {
+        display: grid;
+        justify-self: center;
+        color: $standBgColor;
+      }
+    }
+
+    .FormulaSetCard-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      border-radius: 10px 10px 0px 0px;
+      background: #262626;
+      /* opacity: 0.18; */
+      /* position: relative; */
+      background-repeat: no-repeat;
+      background-size: auto;
+      position: relative;
+
+      .shortName {
+        /* position: absolute; */
+        /* top: 45%; */
+        /* right: 34%; */
+        /* display: flex; */
+        font-size: 2.75rem;
+        color: #a0a0a0;
+      }
+      .FormulaSetCard-card-header-label {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: #f0f0f0;
+        background-color: #262626;
+        /* top: 0.6vw; */
+        cursor: pointer;
+        // &.bg-with-image {
+        //   color: #262626;
+        //   background-color: #f0f0f0;
+        // }
+
+        //  &:hover{
+        //    background:$popUpTextValueColor ;
+        //  }
+      }
+    }
+
+    .FormulaSetCard-card-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100px;
+
+      border-radius: 0px 0px 10px 10px;
+      padding: 1rem;
+
+      .FormulaSetCard-card-footer-details {
+        display: flex;
+        justify-content: space-between;
+        /* grid-template-columns: 1fr 25%; */
+        /* height: 4vw; */
+        /* font-family: "HoneywellSans-Bold"; */
+        /* margin-top: 0.25rem;*/
+
+        .FormulaSetCard-card-footer-details-left {
+          display: flex;
+          flex-direction: column;
+
+          /* justify-self: left; */
+
+          /* align-self: center;*/
+          .vParameters {
+            color: #4eabf8;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-family: 'HoneywellSans-Medium';
+            margin-top: 0.25rem;
+            // -ms-grid-row: 2;
+            // grid-row: 2;
+          }
+          .FormulaSetCard-card-footer-details-left-name {
+            font-size: 1.25rem;
+            font-family: 'HoneywellSans-Bold';
+            color: #c0c0c0;
+            // -ms-grid-row: 1;
+            // grid-row: 1;
+          }
+        }
+
+        .FormulaSetCard-card-footer-details-right {
+          display: flex;
+          flex-direction: column;
+
+          /* justify-self: center; */
+
+          /* align-self: center; */
+          color: #c0c0c0;
+          .FormulaSetCard-card-footer-details-right-products {
+            font-family: 'HoneywellSans-Medium';
+            font-size: 0.875rem;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25rem;
+            /* grid-row: 2;*/
+          }
+          .FormulaSetCard-card-footer-details-right-total {
+            font-family: 'HoneywellSans-Bold';
+            font-size: 2rem;
+
+            display: flex;
+
+            /* justify-self: center; */
+
+            /* grid-row: 1; */
+
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .FormulaSetCard-card-footer-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /* grid-template-columns: 80% 1fr; */
+        /* height: 2vw; */
+        font-family: 'HoneywellSans-Bold';
+        .FormulaSetCard-card-footer-icons-states {
+          font-size: 0.875rem;
+          display: flex;
+          align-items: center;
+          .action-required {
+            display: flex;
+            color: #4eabf8;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-family: 'HoneywellSans-Medium';
+            margin-left: 0.5rem;
+          }
+          /* grid-template-columns: 15% 1fr;*/
+          // span {
+          //   // border: 1px solid $selectedBlueColor;
+          //   border-radius: 4px;
+          //   padding: 0.25vw;
+          //   margin-right: 0.25vw;
+          // }
+        }
+
+        .FormulaSetCard-card-footer-icons-img {
+          display: flex;
+          // -ms-grid-column-align: end;
+          /* justify-content: right; */
+          /* padding-right: 0.5vw;*/
+        }
+      }
+    }
+  }
+}
+
+.green {
+  color: #3dae3b;
+}
+.orange {
+  color: #f37021;
+}
+.yellow {
+  color: #ffc627;
+}
+.popup-content-main {
+  width: 12rem !important;
+  padding-top: 0.02rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.25rem;
+  .inner-content {
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 0.85rem !important;
+    cursor: pointer;
+  }
+  .inner-content.disabled {
+    cursor: not-allowed;
+    color: #707070;
+    // background-color: #707070 !important;
+  }
+}

@@ -1,0 +1,194 @@
+//
+// Custom form element variations
+//
+
+@mixin forge-form-elements($theme: 'dark') {
+  //
+  // labels
+  //
+  div.ui.input-label .input-label-message {
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.025rem;
+  }
+
+  //
+  // Textbox
+  //
+
+  .ui.single-input {
+    > .input-wrap > input {
+      height: 2rem;
+    }
+    .input-wrap {
+      border-radius: 4px;
+    }
+    .input-box {
+      padding: 0 0.875rem;
+      border-radius: 4px;
+    }
+  }
+
+  //
+  // Checkbox and radio button
+  //
+  .ui {
+    &.checkbox {
+      .box:before,
+      label:before,
+      input:checked ~ .box:after,
+      input:checked ~ label:after {
+        border-radius: 2px;
+      }
+      &.toggle {
+        &.checked {
+          input ~ label:after {
+            border-radius: 500rem !important;
+          }
+        }
+      }
+    }
+
+    //
+    // Radio button
+    //
+    &.radio {
+      &.checkbox.checked input ~ label:after {
+        transform: scale(0.5);
+      }
+
+      input:checked ~ label:after {
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  $accent-color: '';
+  $theme-accent-color: '';
+  $border-color: '';
+  $background-color: '';
+  @if ($theme == 'dark') {
+    $accent-color: gray-accent-color('light-400');
+    $theme-accent-color: base-theme-palette-color('primary-#{$theme}');
+    $border-color: $accent-color;
+    $background-color: $accent-color;
+  } @else if ($theme == 'light') {
+  }
+
+  @include forge-form-elements-theme(
+    $theme-accent-color,
+    $border-color,
+    $background-color
+  );
+}
+
+@mixin forge-form-elements-theme(
+  $theme-accent-color: '',
+  $border-color: '',
+  $background-color: ''
+) {
+  //
+  // Textbox
+  //
+  .ui.single-input .input-wrap {
+    background-color: $background-color;
+    border: $default-border-width $default-border-style $border-color;
+  }
+  .ui.single-input.disabled .input-wrap {
+    background-color: $gray-light-300;
+    border: $default-border-width $default-border-style $gray-light-300;
+    input {
+      background-color: $gray-light-300;
+      border: $default-border-width $default-border-style $gray-light-300;
+    }
+  }
+  .ui.single-input .input-box {
+    background-color: $background-color;
+    border: $default-border-width $default-border-style $border-color;
+
+    &:focus {
+      background-color: $background-color;
+    }
+  }
+
+  .ui {
+    &.checkbox:not(.radio) {
+      .box:hover::before,
+      label:hover::before {
+        background-color: transparent;
+        border-color: $gray-light-400;
+      }
+
+      label:before {
+        background-color: transparent !important;
+        border: 0.145rem solid $gray-light-300;
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+
+      input:checked ~ label:after {
+        // background-color: $background-color;
+        background: transparent
+          linear-gradient(90deg, $blue-light-100 0%, $blue-dark-000 100%) 0% 0%
+          no-repeat padding-box;
+        color: $gray-dark-700 !important;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding-top: 0.15rem;
+      }
+
+      &.disabled {
+        &.checkbox {
+          label:before {
+            background-color: transparent !important;
+            border: 0.145rem solid $gray-light-100;
+            width: 1.25rem;
+            height: 1.25rem;
+          }
+
+          label:after {
+            background: transparent
+              linear-gradient(90deg, $blue-light-400 0%, $blue-light-300 100%)
+              0% 0% no-repeat padding-box !important;
+            width: 1.25rem;
+            height: 1.25rem;
+          }
+
+          input:checked ~ label:after {
+            color: $gray-dark-200 !important;
+            padding-top: 0.15rem;
+          }
+        }
+      }
+    }
+
+    //
+    // Radio button
+    //
+    &.radio {
+      &.checkbox {
+        &.checked {
+          input ~ .box:before,
+          input ~ label:before {
+            background-color: $theme-accent-color;
+            border: 0.095rem solid $theme-accent-color;
+          }
+
+          input ~ label:after {
+            background-color: $background-color;
+          }
+
+          input:focus ~ .box:before,
+          input:focus ~ label:before {
+            background-color: $theme-accent-color;
+          }
+
+          input:focus ~ .box:after,
+          input:focus ~ label:after {
+            background-color: $background-color;
+          }
+        }
+      }
+    }
+  }
+}

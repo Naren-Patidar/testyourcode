@@ -1,0 +1,18 @@
+//
+// Honeywell Icons
+//
+
+@mixin hi($icon) {
+  // font-family: ; // Honeywell icon font
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  content: '#{$icon}';
+}

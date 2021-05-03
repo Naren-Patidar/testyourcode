@@ -1,0 +1,33 @@
+html.honeywell-dark-theme {
+  .ui.toggle.checkbox {
+    input ~ label {
+      color: #f0f0f0 !important;
+    }
+    &.disabled {
+      input ~ label {
+        color: #d0d0d0 !important;
+      }
+    }
+    input:focus ~ .label:before,
+    input ~ label:before {
+      border: none !important;
+      background: #a0a0a0 !important;
+    }
+    input:focus ~ .label:after,
+    input ~ label:after {
+      background: #202020 !important;
+      box-shadow: inset 1px 1px 1px rgb(0 0 0 / 30%);
+    }
+    &.checked {
+      input:checked:focus ~ .label:before,
+      input:checked ~ label:before {
+        background-image: linear-gradient(
+          to right,
+          #45adf7,
+          #1792e6
+        ) !important;
+        border: none !important;
+      }
+    }
+  }
+}

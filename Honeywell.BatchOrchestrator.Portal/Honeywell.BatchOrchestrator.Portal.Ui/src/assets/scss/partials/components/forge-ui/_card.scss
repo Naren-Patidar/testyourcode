@@ -1,0 +1,25 @@
+// html.honeywell-dark-theme {
+//   .ui.card {
+//     background-color: #262626 !important;
+//     border-radius: 8px !important;
+//     .content {
+//       background-color: #262626 !important;
+//       border-radius: 8px !important;
+//     }
+//   }
+//
+// Scuf overrides
+//
+
+// Cards
+
+// Themes
+html.honeywell-dark-theme {
+  $theme: 'dark';
+  @include forge-card($theme);
+}
+
+html:not(.honeywell-dark-theme) {
+  $theme: 'light';
+  @include forge-card($theme);
+}

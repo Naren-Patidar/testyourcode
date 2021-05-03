@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebHelpSystem DefaultUrl="Content/Batch_orchs/About This Guide.htm" Toc="Data/Tocs/batch_orchs.js" Index="Data/Index.js" Concepts="Data/Concepts.js" Glossary="Data/Glossary.js" SearchDatabase="Data/Search.js" Alias="Data/Alias.xml" Synonyms="Data/Synonyms.xml" SearchFilterSet="Data/Filters.js" PathToScriptsFolder="Resources/Scripts/" SkinName="HTML5 - Tripane" SkinID="HTML5_TriPane" Multilingual="false" Skins="HTML5 - Tripane" BuildTime="9/29/2020 4:04:13 PM" BuildVersion="13.2.6355.27565" TargetType="WebHelp2" SkinTemplateFolder="Skin/" InPreviewMode="false" TopNavTocPath="true" MoveOutputContentToRoot="false" ReplaceReservedCharacters="false" MakeFileLowerCase="false" UseCustomTopicFileExtension="false" PreventExternalUrls="false" EnableResponsiveOutput="true" IncludeGlossarySearchResults="true" ResultsPerPage="20" xml:lang="en-us" LanguageName="English" SearchEngine="MadCapSearch">
+    <CatapultSkin Version="3" SkinType="WebHelp2" Comment="HTML5 skin" Anchors="Width,Height" Width="800" Height="600" Top="0" Left="0" Bottom="0" Right="0" Tabs="TOC" DefaultTab="TOC" UseBrowserDefaultSize="True" UseDefaultBrowserSetup="true" RemoveImagesOnSave="true" EnableResponsiveOutput="true" CommentsInTopic="false" DisplayCommunitySearchResults="false" DisplayNotificationOptions="false" Title="[%=Prod_Rel.Product%] R[%=Prod_Rel.RelShort%] User Assistance" AutoSyncTOC="true" BrowserSetup="" SkinID="HTML5_TriPane" NavigationLinkTop="false" IndexPartialWordSearch="false" GlossaryPartialWordSearch="false" Name="HTML5 - Tripane" SkinClass="_Skins_HTML5___Tripane" HideNavOnStartup="False" LogoUrl="">
+        <Toolbar EnableCustomLayout="true" Buttons="Print|Separator|PreviousTopic|NextTopic">
+            <Script>$(document).ready(function(){
+	var headerTitle = $("meta[name='header-title']").attr("content");
+
+	$("#header&gt;a").after('&lt;div id="header-title"&gt;&lt;/div&gt;');
+	$("#header-title").text(headerTitle);
+	$("#header-title").css({
+	"font-family": "Honeywell Cond Web Extrabold",
+	"font-size": "2em",
+	"padding-left": "290px",
+	"padding-top": "32px",
+	"color": "#ffffff"
+});
+
+	$("#responsiveHeader&gt;a").after('&lt;div id="responsive-header-title"&gt;&lt;/div&gt;');
+	$("#responsive-header-title").text(headerTitle);
+
+});</Script>
+        </Toolbar>
+        <WebHelpOptions NavigationPaneWidth="275" NavigationPanePosition="Left" HideNavigationOnStartup="false" />
+    </CatapultSkin>
+</WebHelpSystem>

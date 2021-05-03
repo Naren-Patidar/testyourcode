@@ -1,0 +1,22 @@
+.more-action-popup {
+  background-color: #505050 !important;
+  width: 12rem !important;
+
+  border-radius: 0.25rem;
+  .more-action-item {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: #f0f0f0;
+    &:hover {
+      background-color: #404040;
+    }
+    .more-action-text {
+      margin-left: 1rem;
+      font-size: 0.85rem !important;
+    }
+    .more-action-text.disabled {
+      cursor: not-allowed;
+      color: #707070;
+    }
+  }
+}

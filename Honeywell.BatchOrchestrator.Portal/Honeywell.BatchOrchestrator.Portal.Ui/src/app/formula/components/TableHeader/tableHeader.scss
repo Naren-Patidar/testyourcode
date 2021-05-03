@@ -1,0 +1,33 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.TableHeader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3vw 15vw 8vw 8vw 8vw 8vw 8vw 10vw;
+  grid-template-columns: 3vw 15vw 8vw 8vw 8vw 8vw 8vw 10vw;
+  font-family: $bold;
+  font-size: 0.75rem;
+  font-weight: 10;
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+  .TableHeader_column {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: center;
+    justify-items: center;
+    // border-left: 0.00001px solid #272727;
+    // border-top: 0.00001px solid $tableOddRowBgColor;
+    // border-right: 0.00001px solid #272727;
+  }
+  .TableHeader_column:nth-child(1) {
+    // border-left: 0px solid #272727;
+  }
+  .TableHeader_column:last-child {
+    // border-right: 0px solid #272727;
+  }
+}

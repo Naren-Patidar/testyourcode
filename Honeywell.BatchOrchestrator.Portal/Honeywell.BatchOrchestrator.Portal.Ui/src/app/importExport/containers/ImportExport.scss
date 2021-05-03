@@ -1,0 +1,118 @@
+@import '../../../assets/stylesheets/colors.scss';
+@import '../../../assets/stylesheets/fonts.scss';
+
+.import-export {
+  display: grid;
+  margin: 0rem;
+  background: #1c1c1c;
+  -ms-grid-columns: 16% 84%;
+  grid-template-columns: 16% 84%;
+  color: #c0c0c0 !important;
+  position: relative;
+  height: 83vh;
+  .import-export_leftPanel {
+    background-color: $transperentColor;
+    padding: 0.25rem;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    border-right: 2px solid #404040;
+    .import-export_leftPanel-headerText {
+      font-family: $bold;
+      font-size: 1rem;
+      padding-left: 0rem;
+      padding-bottom: 1rem;
+    }
+    .sub-child {
+      padding-left: 20px;
+      input[type="file"] {
+        color: transparent;
+      }
+    }
+    .ui.single-input .input-wrap {
+      border: none;
+      .input-box {
+        background-color: #151515;
+        border: none;
+      }
+    }
+    ::-webkit-file-upload-button {
+      background: #1792e5;
+      color: #fff;
+      border: none;
+    }
+  }
+  .error-message {
+    color: #ff644c;
+    .cell-data-wrap {
+      color: #ff644c;
+    }
+  }
+  .import-export_rightPanel_main {
+    position: relative;
+    border-radius: 4px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    margin: 0 15px;
+    .import-export_header {
+      align-items: center;
+      display: flex;
+      .ui.single-input.search-table .input-wrap {
+        border: none;
+        border-radius: 10px;
+        .input-box {
+          background-color: #252525;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+    .clear-all {
+      color: $blueTxtColor;
+      cursor: pointer;
+    }
+    .ui.forge-datatable-wrap {
+      .p-datatable tbody.p-datatable-tbody {
+        tr:nth-child(even) {
+          background-color: #202020 !important;
+        }
+        .p-selection-column .p-checkbox {
+          position: relative;
+          align-items: center;
+          vertical-align: middle;
+          left: 0;
+          top: auto;
+          .p-checkbox-box {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+    .ui.striped.table {
+      border: #151515 0.0625rem solid;
+      thead {
+        th {
+          border-top: none;
+          border-bottom: #151515 0.0625rem solid;
+        }
+      }
+      tbody {
+        .ui.checkbox {
+          padding: 0.75rem 1.5rem 0.75rem 1rem;
+        }
+        td {
+          text-transform: uppercase;
+          .ui.checkbox {
+            padding: 4px 0px 0 0;
+          }
+        }
+      }
+    }
+    .table-footer {
+      background: #2a2a2a;
+      padding: 4px;
+      margin: 0 !important;
+      border-radius: 8px;
+    }
+  }
+}

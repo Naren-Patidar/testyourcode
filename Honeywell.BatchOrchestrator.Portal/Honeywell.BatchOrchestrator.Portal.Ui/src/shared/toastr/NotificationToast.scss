@@ -1,0 +1,43 @@
+.notification-toast-card {
+    .close {
+      float: right;
+      text-align: right;
+      padding: 10px 15px 0px 0px;
+      font-size: 0.75rem !important;
+    }
+    .card {
+      background-color: #272727 !important;
+      margin: 0 !important;
+      padding: 0px 0px 15px 25px !important;
+      .header {
+        padding-top: 0;
+        padding-right: 0;
+        .unread-msg {
+          position: absolute;
+          left: 15px;
+          display: flex;
+          align-items: center;
+          &.green {
+              .h-icon.common {
+                  color: #4DBC48;
+              }
+          }
+          &.red {
+            .h-icon.common {
+                color: #FD644C;
+            }
+          }
+        }
+      }
+      .content {
+          color: #C0C0C0;
+          padding: 0.5rem 1rem 0rem !important;
+          .ui.button.link {
+              padding: 0 !important;
+              min-width: auto !important;
+              height: 15px !important;
+              min-height: 15px !important;
+          }
+      }
+    }
+  }

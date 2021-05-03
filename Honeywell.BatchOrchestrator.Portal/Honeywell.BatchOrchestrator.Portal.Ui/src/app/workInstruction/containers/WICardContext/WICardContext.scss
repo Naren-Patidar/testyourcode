@@ -1,0 +1,20 @@
+@import "../../../../assets/stylesheets/colors.scss";
+@import "../../../../assets/stylesheets/fonts.scss";
+@import "../../stylesheets/index.scss";
+
+.edited-text {
+  color: $itemTitleColor;
+  font-size: $font-11;
+}
+.dt-format {
+  color: $whiteColor;
+  font-size: $font-11;
+  font-weight: 100;
+}
+.ewi-state {    
+  background: #353535;
+  padding: 0 5px 0px 5px !important;
+  margin: 0 0 0 5px;
+  font-size: 11px;
+  text-transform: capitalize;
+}

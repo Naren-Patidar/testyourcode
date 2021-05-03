@@ -1,0 +1,59 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+@mixin center-element {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin box-sizing($x: border-box) {
+  -webkit-box-sizing: $x;
+  -moz-box-sizing: $x;
+  box-sizing: $x;
+}
+
+@mixin svgElementStroke($strokeColor) {
+  outline: 1px solid $strokeColor;
+}
+
+%loginModalDialogueBox {
+  background: $containerBgColor;
+  border: 1px solid #000;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+%modalDialogueBox {
+  background: $containerBgColor;
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.50);
+}
+
+%addEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%flex-container-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%font-family-medium-12px {
+  font-family: $medium;
+  font-size: 0.86rem;
+}
+@mixin transform-rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin addShadow($border-top,$broder-right,$border-bottom,$border-left) {
+  border-top: $border-top solid $blackColor;
+  border-bottom: $border-bottom solid transparent;
+  border-left: $border-left solid $blackColor;
+  border-right: $broder-right solid transparent;
+
+}

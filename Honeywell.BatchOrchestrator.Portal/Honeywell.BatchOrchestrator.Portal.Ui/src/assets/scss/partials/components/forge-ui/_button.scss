@@ -1,0 +1,64 @@
+//
+// Scuf overrides
+//
+
+// Buttons
+
+// Themes
+html.honeywell-dark-theme {
+  $theme: 'dark';
+  @include forge-button($theme);
+}
+
+html:not(.honeywell-dark-theme) {
+  $theme: 'light';
+  @include forge-button($theme);
+}
+
+// Base
+
+// TODO: Use from variables
+.button {
+  border-width: $default-border-width !important;
+  border-style: $default-border-style;
+  border-radius: $default-border-radius !important;
+
+  &.small {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    line-height: 1rem !important;
+    max-height: 28px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+    min-width: 54px !important;
+    max-width: 300px !important;
+  }
+
+  &.medium {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    line-height: 1rem !important;
+    max-height: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    min-width: 70px !important;
+    max-width: 300px !important;
+  }
+
+  &.large {
+    font-size: 0.95rem !important;
+    padding: 0.25rem 1.5rem !important;
+    line-height: 1.5rem !important;
+    max-height: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    min-width: 80px !important;
+    max-width: 300px !important;
+  }
+
+  .button-content {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+}

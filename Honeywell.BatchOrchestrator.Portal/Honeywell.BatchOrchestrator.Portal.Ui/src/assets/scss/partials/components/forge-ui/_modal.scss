@@ -1,0 +1,43 @@
+// Modals
+
+html.honeywell-dark-theme {
+  .ui.dimmer {
+    background: rgba(32, 32, 32, 0.5) 0% 0% no-repeat padding-box !important;
+    backdrop-filter: blur(6px);
+  }
+  .ui.modal {
+    border: 1px !important;
+    border-radius: 8px !important;
+    height: auto !important;
+  }
+  .ui.modal.medium {
+    width: 50%;
+  }
+  // .ui.modal .scrolling.content {
+  //   overflow-x: hidden !important;
+  // }
+  .modals.dimmer {
+    .ui.scrolling.modal {
+      margin-top: auto !important;
+    }
+  }
+}
+
+.ui.small.modal {
+  height: unset !important;
+  font-size: 1.3em !important;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .modals.dimmer {
+    .ui.scrolling.modal {
+      position: relative !important;
+      margin: 3.5rem 0 !important;
+    }
+    .ui.modal {
+      position: relative !important;
+      margin: 3.5rem 0 !important;
+    }
+  }
+}

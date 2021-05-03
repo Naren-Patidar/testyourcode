@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="batch_orchs.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Troubleshooting and Security</title>
+        <link href="../Resources/Stylesheets/HDLSPrint.css" rel="stylesheet" type="text/css" />
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <table class="AutoNumber_h1_ChapterName" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+            <col style="width: 0px;" />
+            <col style="width: 0px;" />
+            <col style="width: auto;" />
+            <tr>
+                <td valign="top" />
+                <td class="AutoNumber_h1_ChapterName" valign="top"><span class="NoDisplay">Chapter 6 - </span>
+                </td>
+                <td class="AutoNumber_h1_ChapterName" valign="top" data-mc-autonum="Chapter 1 - ">Troubleshooting and Security</td>
+            </tr>
+        </table>
+        <div>&#160;</div>
+        <h2>Troubleshooting</h2>
+        <div>&#160;</div>
+        <div>
+           We will discuss some of the common issue faced by users while performing tasks on Batch Orchestrator:
+		</div>
+        <div>
+        </div>
+        <h3>Product Category Creation Fails</h3>
+        <div>&#160;</div>
+        <p>Users are unable to create product category for invalid MR: </p>
+        <ol>
+            <li value="1">When MR is present in the server point but does not exist in Control Builder. This may occur due to error while deleting MR, of after migration or after a bulk delete</li>
+            <li value="2">No Data Block is associated to MR</li>
+            <li value="3">When MR is associated with a Data Block, but there is no formula parameter that exist and is configured with only report parameter</li>
+            <li value="4">When MR is in Red Status in Control Builder</li>
+        </ol>
+        <div>&#160;</div>
+        <h2>Security</h2>
+        <div>&#160;</div>
+        <div>The Batch Orchestrator uses SSL Certificates to secure all the data while passing from the browser to the Experion Server. Users can verify this by checking the URL after Installation of the Batch Orchestrator. It must begin with "https", this indicates that the site is secured using SSL certificate (s stands for secure). </div>
+        <div>&#160;</div>
+        <div>Please refer to the "Software Installation User Guide" and "Network Best Practices", for more information.</div>
+        <div>
+        </div>
+    </body>
+</html>

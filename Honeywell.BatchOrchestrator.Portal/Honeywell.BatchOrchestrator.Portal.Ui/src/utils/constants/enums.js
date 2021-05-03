@@ -1,0 +1,15 @@
+export const PARAM_TYPES = {
+  STRING: 'STRING',
+  DOUBLE: 'FLOAT64',
+  INTEGER: 'INT32',
+  ENUMERATION: 'ENUM',
+  BOOLEAN: 'BOOLEAN',
+};
+export const NEW_PARAM_TYPES = {
+  STRING: 'STRING',
+  FLOAT64: 'FLOAT64',
+  INT32: 'INT32',
+  BOOLEAN: 'BOOLEAN',
+  ENUMERATION: 'ENUM',
+};
+export const PAGE_SIZE = 50;

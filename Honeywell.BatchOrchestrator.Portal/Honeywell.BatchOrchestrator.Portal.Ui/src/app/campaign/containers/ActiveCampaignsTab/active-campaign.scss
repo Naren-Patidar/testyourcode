@@ -1,0 +1,19 @@
+.running-campaign {
+  color: #4dbc48;
+  padding-left: 0.56rem;
+}
+.paused-campaign {
+  color: #fec62d;
+  padding-left: 0.56rem;
+}
+.terminated-campaign {
+  color: #c746a1;
+  padding-left: 0.56rem;
+}
+.completed-campaign {
+  color: #a0a0a0;
+  padding-left: 0.56rem;
+}
+.fault {
+  color: #ff644c !important;
+}

@@ -1,0 +1,69 @@
+.step {
+  .connector-right {
+    margin-left: 0 !important;
+  }
+
+  .connector-left {
+    margin-right: 0 !important;
+  }
+}
+
+.step-completed {
+  position: absolute;
+  padding-left: 0.3rem;
+  &:after {
+    content: '✔';
+    border-radius: 50%;
+    font-weight: 800;
+    color: #000;
+    font-size: 11px;
+    // content: '\ea56';
+    // font-family: 'Honeywell-Icons';
+    // font-size: 0.65rem;
+    // font-weight: 900;
+    // color: #202020;
+  }
+}
+//  .step-active:before {
+//      //  content: 'O';
+//       width: 10px;
+//       height: 10px;
+//       text-align: center;
+//       background: #000;
+//       border-radius: 50%;
+//       color: #000;
+//       font-weight: 900;
+//  }
+.step-active {
+  padding: 0.3rem;
+  //   &:before {
+  //   width: 10px;
+  //   height: 10px;
+  //   text-align: center;
+  //   background: #000;
+  //   border-radius: 50%;
+  //   color: #000;
+  //   font-weight: 900;
+  //   }
+  .step-indicator {
+    //  content: 'O';
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background: #202020;
+    border-radius: 50%;
+    color: #202020;
+    font-weight: 900;
+  }
+}
+.step-completed-indicator {
+  position: relative;
+  left: 0.5rem;
+  top: 0.3rem;  
+  transform: rotate(45deg);
+  height: 0.625rem;
+  width: 0.3125rem;
+  margin-left: 0px;
+  border-bottom: 2px solid #202020;
+  border-right: 2px solid #202020
+}

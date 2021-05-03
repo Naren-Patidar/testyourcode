@@ -1,0 +1,540 @@
+/* .formula-set {
+  box-sizing: border-box;
+  padding: 1.8519vh 1.6667vw 3.1481vh;
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+
+/* .formula-set-card {
+  margin: 0;
+  background: #262626 0% 0% no-repeat padding-box;
+  box-sizing: border-box;
+  padding: 0;
+  box-shadow: 0 0.0521vw 0.15625vw #00000033;
+  border-radius: 0.2604vw;
+} */
+
+/* .formula-set-card .review-formula-set {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  margin: 1.12rem 1rem 0.8333rem;
+  padding: 0;
+  float: left;
+} */
+
+/* .formula-set-card .input-search {
+  float: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+} */
+
+.formula-set-card .row-formula-set-icons {
+  display: flex;
+  /* padding-top: 1.25%; */
+}
+
+.formula-set-card .row-formula-set-icons .edit-icon {
+  /* padding-left: 0.5%; */
+}
+
+.horizontal-divider {
+  height: 1px;
+  margin: 0.75rem 0;
+  width: 100%;
+  background: #202020 0% 0% no-repeat padding-box;
+}
+/*
+.formula-set-card .search {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.formula-set-card .ui.single-input.search .input-box:hover {
+  background: #262626 0% 0% no-repeat padding-box;
+}
+
+.formula-set-card .ui.single-input.search .input-box:focus {
+  background: #262626 0% 0% no-repeat padding-box !important;
+  border: 0.0521vw solid #4eabf8;
+} 
+
+.formula-set-card .ui.single-input.search > .input-wrap > input {
+  height: 1.6667rem;
+  background: #262626 0% 0% no-repeat padding-box;
+  border-radius: 0.20833rem !important;
+  border: 0.0521vw solid #808080 !important;
+  font-size: 0.5833rem;
+  color: #b0b0b0;
+  width: 15.625vw;
+  padding-left: 1.5833rem;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.formula-set-card .ui.single-input.has-icon.align-left.search .input-icon {
+  margin-left: 0.5rem;
+  transform: scale(-1, 1);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  left: 0;
+  top: 0;
+  font-size: 0.667rem !important;
+  cursor: text;
+}
+
+.formula-set-card .input-search ::placeholder {
+  font-family: 'Honeywell Sans Web' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: #b0b0b0 !important;
+  font-size: 0.5833rem !important;
+}
+
+.formula-set-card .input-search ::-ms-input-placeholder {
+  font-family: 'Honeywell Sans Web' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: #b0b0b0 !important;
+  font-size: 0.5833rem !important;
+}
+*/
+
+/* .formula-set-card .label-value {
+  float: left;
+  width: 20.8333vw;
+  height: 3.3854vw;
+  margin-top: 1.6146vw;
+  margin-left: 1.25vw;
+}
+
+.formula-set-card .label-value p {
+  color: #f0f0f0;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  margin: 0 0 0.375rem;
+  padding: 0;
+  line-height: 0.667rem;
+} */
+
+/* .formula-set-card .ui.single-input.disabled > .input-wrap > input {
+  height: 1.667rem;
+  border-radius: 0.1667rem !important;
+}
+
+.formula-set-card .ui.single-input.disabled .input-box {
+  font-size: 0.75rem;
+  border: 0.05208vw solid #606060;
+  background: #303030 !important;
+  color: #f0f0f0 !important;
+  font-family: 'Honeywell Sans Web' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  padding-left: 0.6667rem;
+} */
+
+.clear {
+  clear: both;
+}
+
+/* .formula-set .ui.checkbox.description {
+  margin: 1.333rem 1rem 0.8333rem 0;
+  min-height: 1rem;
+  height: 1rem;
+  width: 7.834rem;
+  min-width: 2rem;
+  float: right;
+}
+
+.formula-set .ui.checkbox.description input:checked ~ label {
+  line-height: 1rem;
+  font-size: 0.5rem !important;
+}
+
+.formula-set .ui.checkbox.description input ~ label,
+.formula-set .ui.checkbox.description input ~ label:hover {
+  width: 7.834rem;
+  line-height: 1rem;
+  font-size: 0.5rem !important;
+}
+
+.formula-set .ui.checkbox.description .box:before,
+.formula-set .ui.checkbox.description label:before {
+  border-radius: 0.5rem !important;
+  background: #a0a0a0 0% 0% no-repeat padding-box !important;
+  border: none !important;
+}
+
+.formula-set .ui.toggle.checkbox.description input:focus ~ .label:after,
+.formula-set .ui.toggle.checkbox.description input ~ label:after {
+  background-color: #202020 !important;
+  box-shadow: 0.0521vw 0.0521vw 0.15625vw #00000080;
+  height: 0.6667rem !important;
+  width: 0.6667rem !important;
+  left: 0.1667rem !important;
+  top: 0.1rem !important;
+  margin-top: 0.1667rem;
+}
+
+.formula-set .ui.checkbox input {
+  height: 0.6667rem !important;
+  width: 0.6667rem !important;
+}
+
+.formula-set .ui.checkbox input:checked ~ label {
+  line-height: 0.667rem !important;
+  font-size: 0.667rem !important;
+}
+
+.formula-set
+  .ui.toggle.checkbox.checked.description
+  input:checked:focus
+  ~ .label:before,
+.formula-set
+  .ui.toggle.checkbox.checked.description
+  input:checked
+  ~ label:before {
+  background: transparent linear-gradient(270deg, #1792e6 0%, #45adf7 100%) 0%
+    0% no-repeat padding-box !important;
+  border: none !important;
+}
+
+.formula-set .ui.checkbox.description input:checked ~ .box:after,
+.formula-set .ui.checkbox.description input:checked ~ label:after {
+  background: #202020 0% 0% no-repeat padding-box;
+  border-radius: 0.5rem !important;
+  left: 1.1667rem !important;
+}
+
+.formula-set .ui.checkbox input ~ label,
+.formula-set .ui.checkbox input ~ label:hover {
+  line-height: 0.6667rem;
+  font-size: 0.6667rem;
+}
+
+.formula-set .ui.checkbox label {
+  padding-left: 1rem;
+} */
+
+/* .formula-set .ui.button.inline-secondary {
+  border: 0.1042vw solid #707070;
+  box-sizing: border-box;
+  color: #C0C0C0;
+  background-color: transparent;
+  border-radius: 0.1667rem;
+  text-transform: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 0.5833rem;
+  padding-top: 0.5416rem;
+  padding-bottom: 0.5416rem;
+  line-height: 0.5833rem;
+  margin-top: 2.222vh;
+  letter-spacing: 0.0208rem;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+}
+.formula-set .ui.button.inline-secondary:hover {
+  border: 0.1042vw solid #202020 !important;
+}
+
+.formula-set .ui.button.secondary {
+  border: 0.1042vw solid #37A3F8;
+  color: #4EABF8;
+  background-color: transparent;
+  border-radius: 0.1667rem;
+  text-transform: none;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 0.5833rem;
+  padding-top: 0.5416rem;
+  padding-bottom: 0.5416rem;
+  line-height: 0.5833rem;
+  margin-top: 2.222vh;
+  letter-spacing: 0.0208rem;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  margin-left: .6667rem;
+}
+
+.formula-set .comment-card .ui.button.primary {
+  border: 0.1042vw solid #303030 !important;
+  padding: .375rem 1.4792rem;
+  margin: 0;
+  margin-right: 0.25rem;
+  margin-top: 2.222vh;
+  float: right;
+}
+.formula-set .comment-card .ui.button.primary:hover {
+  border: 0.1042vw solid #303030 !important;
+}
+.formula-set .comment-card .ui.button.primary:focus {
+  box-shadow: 0 0 0 .05208vw #303030 inset;
+}
+
+.formula-set .ui.button.primary {
+  border: 0.1042vw solid #202020 !important;
+  color: #303030;
+  background: transparent linear-gradient(90deg, #1792E5 0%, #45ADF7 100%) 0% 0% no-repeat padding-box;  
+  border-radius: 0.1667rem;
+  text-transform: none;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 0.5833rem;
+  padding-top: 0.5416rem;
+  padding-bottom: 0.5416rem;
+  line-height: 0.5833rem;
+  margin-top: 2.222vh;
+  letter-spacing: 0.0208rem;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  margin-left: 0.6667rem;
+}
+.formula-set .ui.button.primary:hover,
+.formula-set .ui.button.secondary:hover {
+  border: 0.1042vw solid #202020 !important;
+}
+.formula-set .ui.button.inline-secondary.disabled:hover,
+.formula-set .ui.button.secondary.disabled:hover {
+  border: .1042vw solid #606060 !important;
+}
+.formula-set .ui.button.primary:focus {
+  box-shadow: 0 0 0 0.05208vw #202020 inset;
+}
+.formula-set .ui.button.secondary:focus,
+.formula-set .ui.button.inline-secondary:focus {
+  box-shadow: 0 0 0 .1042vw #1792E5;
+} */
+
+.comment {
+  float: right;
+}
+
+.comment-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23.333vw;
+  height: 18.385vw;
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 10;
+  background: #303030 0% 0% no-repeat padding-box;
+  box-shadow: 0.05208vw 0.05208vw 0.2604vw #000000;
+  border-radius: 0.4167rem;
+  padding: 1.25rem 1rem 1rem;
+  clear: both;
+}
+
+.comment-close {
+  float: right;
+  cursor: pointer;
+  margin-right: 0.25rem;
+}
+
+.comment-card p {
+  font-size: 0.6667rem;
+  color: #f0f0f0;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 400;
+  padding: 0;
+  margin: 1rem 0 0.5rem;
+}
+
+.comment-card .scuf-textarea-wrapper {
+  width: 100%;
+}
+
+.comment-card .scuf-textarea-wrapper ::placeholder {
+  color: #f0f0f0 !important;
+  font-family: 'Honeywell Sans Web' !important;
+  font-weight: 400 !important;
+  font-size: 0.6667rem !important;
+  font-style: normal !important;
+  line-height: 1rem !important;
+}
+.comment-card .scuf-textarea-wrapper ::-webkit-input-placeholder {
+  color: #f0f0f0 !important;
+  font-family: 'Honeywell Sans Web' !important;
+  font-weight: 400 !important;
+  font-size: 0.6667rem !important;
+  font-style: normal !important;
+  line-height: 1rem !important;
+}
+
+.comment-card .scuf-textarea-wrapper textarea {
+  font-family: 'Honeywell Sans Web';
+  font-weight: 400;
+  color: #f0f0f0;
+  background: #404040;
+  min-width: 0 !important;
+  width: 100%;
+  margin: 0;
+  padding: 0.6667rem 1rem 0.6667rem 0.6667rem;
+  font-size: 0.6667rem;
+  line-height: 1rem;
+  border: none;
+  border-radius: 0.2083rem;
+  min-height: 0;
+  resize: none;
+}
+
+.formula-set .scuf-textarea-wrapper ::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.formula-set .scuf-textarea-wrapper ::-webkit-scrollbar-thumb {
+  border-radius: 0.2rem;
+  background: #707070b3 0% 0% no-repeat padding-box;
+}
+
+/* .formula-set .float-right {
+  float: right;
+} */
+
+/* .formula-set .float-left {
+  float: left;
+} */
+
+.filter {
+  margin: 0 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.formula-set .filter-button {
+  border: 1px solid #808080;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  color: rgb(220, 220, 220);
+  cursor: pointer;
+}
+
+.formula-set .filter-button.show-filter {
+  border: 0.0521vw solid #262626;
+  background: #808080 0% 0% no-repeat padding-box;
+}
+
+.formula-set .filter-button .filter-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.formula-set .filter-button p {
+  color: #c0c0c0;
+  font-size: 0.5833rem;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  margin: 0.5417rem 0.75rem 0 0;
+  line-height: 0.5833rem;
+  cursor: pointer;
+}
+.formula-set .filter-button.show-filter p {
+  color: #f0f0f0;
+}
+
+.formula-set .filter .filter-card {
+  min-height: 12.292vw;
+  width: 18.75vw;
+  position: absolute;
+  right: 0;
+  background: #272727 0% 0% no-repeat padding-box;
+  box-shadow: 0.4167rem 0.8333rem 1.6667rem #00000066;
+  border-radius: 0.4167rem;
+  z-index: 5;
+}
+
+.formula-set .filter .filter-card .header {
+  /* height: 3.5417vw; */
+}
+
+.formula-set .filter .filter-card .header .head {
+  color: #d0d0d0;
+  font-size: 1.25rem;
+  /* margin-top: 1.04167rem;
+   margin-left: 1rem;
+   display: inline-block; */
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+}
+
+.formula-set .filter .filter-card .header .clear-all {
+  letter-spacing: 0.02604vw;
+  color: #4eabf8;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  font-size: 0.75rem;
+  /* // margin-top: 1.25rem;
+  // margin-right: 1.5rem;
+  // float: right; */
+  cursor: pointer;
+}
+
+.formula-set .filter .filter-card .filter-parameter {
+  /* // height: 2.9167vw; */
+  border-top: 0.1042vw solid #202020;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.formula-set .filter .filter-card .filter-parameter .filter-parameter-title {
+  /* // margin-top: 0.8333rem;
+  // margin-left: 1rem;
+  // display: inline-block; */
+  color: #c0c0c0;
+  font-family: 'Honeywell Sans Web';
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 0.875rem;
+  /* // line-height: 0.6667rem; */
+}
+
+.formula-set .filter .filter-card .filter-parameter .parameter-icon {
+  /* // float: right;
+  // margin-right: 1rem;
+  // margin-top: 0.8333rem; */
+}
+
+.formula-set .filter .filter-card .filter-options {
+  border-top: 0.1042vw solid #202020;
+  /* // margin-bottom: 1rem; */
+  max-height: 10rem;
+  overflow-y: hidden;
+  padding: 0.5rem 1rem;
+}
+
+.formula-set .filter .filter-card .filter-options.scrollable {
+  overflow-y: auto;
+  min-height: 4rem;
+}
+
+.formula-set .filter .filter-card .filter-options .option {
+  margin-top: 0.8333rem;
+  margin-left: 1rem;
+  margin-bottom: 0.1667rem;
+  display: block;
+}
+
+/* .formula-set .ui.checkbox.option input:checked ~ label {
+  color: #f0f0f0;
+  font-weight: 400;
+  font-family: 'Honeywell Sans Web';
+} */
+
+.formula-set .buttons {
+  /* position: absolute; */
+  /* bottom: 3.148vh; */
+  /* width: calc(100% - 3.334vw); */
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}

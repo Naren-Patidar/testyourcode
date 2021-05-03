@@ -1,0 +1,73 @@
+.Batch-filter-container {
+  // .ui.single-input .input-box{
+  //   width: 8rem !important;
+  // }
+  cursor: pointer;
+  .filter {
+    margin: 0 1rem 0 0;
+
+    .filter-button {
+      border: 1px solid rgba(120, 120, 120, 0.5);
+      border-radius: 0.25rem;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.05rem;
+      color: rgb(220, 220, 220);
+
+      .filter-header-text {
+        margin-left: 5px;
+        font-family: 'Honeywell Sans Web';
+      }
+    }
+    .filter-card {
+      /* min-height: 12.292vw; */
+      width: 20vw;
+      position: absolute;
+      right: 0;
+      background: #272727 0 0 no-repeat padding-box;
+      box-shadow: 0.4167rem 0.8333rem 1.6667rem rgba(0, 0, 0, 0.4);
+      border-radius: 0.4167rem;
+      z-index: 5;
+      .filter-parameter {
+        font-size: 0.85rem;
+        letter-spacing: 0.065rem;
+        border-top: 0.1042vw solid #202020;
+        cursor: pointer;
+        padding: 8px 5px;
+        .caret-icon{
+          float: right;
+        }
+        span.filter-parameter-header-text {
+          color: rgb(220, 220, 220);
+          padding: 15px 5px;
+        }
+      }
+      .filter-options {
+        .ui.single-input .input-box{
+          width: 9rem !important;
+        }
+        .option {
+          padding: 0 0.5rem;
+          width: 100%;
+
+          label {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+body .p-datatable .p-datatable-header,
+  body .p-datatable .p-datatable-footer {
+    text-align: unset !important;
+  }
+  
+  // @media only screen and (min-width: 1366){
+  //   html.honeywell-dark-theme .ui.single-input .input-box{
+  //   width: 8rem;
+  // }
+  // }

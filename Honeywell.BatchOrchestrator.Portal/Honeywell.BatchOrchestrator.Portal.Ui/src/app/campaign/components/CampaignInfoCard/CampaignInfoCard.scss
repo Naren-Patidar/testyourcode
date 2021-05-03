@@ -1,0 +1,37 @@
+.campaign-info-card {
+    [class~='scuf-grid'][class~='col'],
+    [class~='scuf-grid'][class*='col-'],
+    [class~='scuf-grid'][class*='col_'],
+    [class*='scuf-grid-'][class~='col'],
+    [class*='scuf-grid-'][class*='col-'],
+    [class*='scuf-grid-'][class*='col_'],
+    [class*='scuf-grid_'][class~='col'],
+    [class*='scuf-grid_'][class*='col-'],
+    [class*='scuf-grid_'][class*='col_'] {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    [class~='col'],
+    [class*='col-'],
+    [class*='col_'] {
+      padding: 0 0.5rem !important;
+    }
+    .ui.input-label {
+      margin: 1rem 0 0.5rem !important;
+    }
+    .accordion.ui.fluid {
+      .title {
+        font-size: 0.75rem !important;
+        padding: 0 !important;
+        margin: 0.5rem 0 !important;
+        border: none !important;
+        .root-icon {
+          font-size: 0.75rem !important;
+          &.left {
+            padding-left: 0.5rem !important;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,38 @@
+html.honeywell-dark-theme .sidebar-layout {
+  position: absolute !important;
+  // inset: 0px;
+  // box-shadow: inset 0 0 2000px rgb(255 255 255 / 50%);
+  // filter: blur(2px);
+  // z-index: 2px;
+  > .sidebar {
+    // min-height: calc(100vh - 66px);
+    min-width: 16.5rem !important;
+    background: #303030 !important;
+    border-right: #303030 !important;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0px;
+    transition: transform 0.3s ease-out 0s !important;
+    will-change: transform;
+    overflow-y: auto;
+    transform: translateX(0%);
+    box-shadow: rgba(32, 32, 32, 0.5) 2px 2px 4px;
+    z-index: 1002 !important;
+    .ui.vertical.menu {
+      width: 16.5rem !important;
+      display: flex;
+    }
+  }
+  // .content {
+  //   top: 45px;
+  // }
+  &.collapse.compressed,
+  &.collapse.no-icons {
+    // box-shadow: none;
+    // filter: none;
+    > .sidebar {
+      transform: translateX(-100%);
+    }
+  }
+}

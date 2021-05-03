@@ -1,0 +1,27 @@
+//
+// Scuf overrides
+//
+
+// Badges
+
+// Themes
+html.honeywell-dark-theme {
+  $theme: 'dark';
+  @include forge-badge($theme);
+  //ewi tags
+  .ui.label.badge.grey {
+    padding: 4px 8px !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-size: 12px !important;
+    color: #f0f0f0 !important;
+  }
+  .ui.label.badge.empty {
+    display: block !important;
+  }
+}
+
+html:not(.honeywell-dark-theme) {
+  $theme: 'light';
+  @include forge-badge($theme);
+}

@@ -1,0 +1,38 @@
+.toast-notification-wrap {
+  background: none;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.toast-notification {
+  margin: 0;
+}
+.ui.notification {
+  margin: 0 !important;
+}
+.Toastify__toast-container--top-right {
+  top: 3.5em;
+  right: 0.5em;
+}
+.Toastify__toast-container--top-center {
+  top: 50px;
+  left: 0;
+  transform: none;
+  width: 100%;
+  padding: 0;
+}
+.Toastify__toast-body {
+  width: 320px;
+}
+.banner-container {
+  background: none;
+  box-shadow: 0 12px 24px 0 rgb(0 0 0 / 10%);
+  padding: 0;
+  border-radius: 0;
+}
+.banner-body {
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+}

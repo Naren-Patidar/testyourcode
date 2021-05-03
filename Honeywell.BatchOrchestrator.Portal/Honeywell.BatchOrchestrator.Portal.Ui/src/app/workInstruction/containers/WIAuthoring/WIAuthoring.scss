@@ -1,0 +1,48 @@
+@import "../../../../assets/stylesheets/colors.scss";
+@import "../../../../assets/stylesheets/fonts.scss";
+
+h6 {
+  font-size: 1rem;
+}
+
+.ui.large.modal {
+  &.wi-edit-modal {
+    width: 50%;
+    overflow: visible;
+    .modal-header {
+      width: 100%;
+      padding-bottom: 5px;
+    }
+    .scrolling.content {
+      overflow: visible;
+      height: 63vh;
+      .ui.scuf-grid {
+        height: 100%;
+      }
+      .cursor-hover {
+        cursor: pointer;
+      }
+      .footer-action-btns {
+        position: absolute;
+        bottom: 30px;
+        padding: 0 10px;
+        right: 0;
+        left: 0;
+        .button {
+          text-transform: inherit;
+        }
+      }
+      .last-edited {
+        position: absolute;
+        bottom: 3px;
+        font-size: 11px;
+      }
+    }
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &.wi-edit-modal {
+        margin-top: 0% !important;
+        margin-left: 0% !important;
+    }
+  }
+}

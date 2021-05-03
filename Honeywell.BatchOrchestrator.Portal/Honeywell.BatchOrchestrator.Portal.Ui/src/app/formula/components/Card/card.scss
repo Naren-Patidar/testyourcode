@@ -1,0 +1,69 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.approvals-card {
+  background-color: $greyBackgroundColor;
+  // height: 4.2vw;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  cursor: pointer;
+  // padding: 0.25rem;
+  font-family: $medium;
+  font-size: 0.875rem;
+  // font-weight: 10;
+  color: #b0b0b0;
+  &.bordered {
+    border: 1px solid #1792e5;
+  }
+  .approvals-card-div1 {
+    padding-left: 6px;
+  }
+  .approvals-card-title {
+    color: #f0f0f0;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .approvals-card-date-info {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: #d0d0d0;
+  }
+  .approvals-card-div2 {
+    display: grid;
+    justify-items: end;
+    font-size: 0.5rem;
+    padding-right: 6px;
+    float: right;
+  }
+}
+
+.approvals-card-border {
+  background-color: $greyBackgroundColor;
+  // height: 4.2vw;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-family: $medium;
+  font-size: 0.75rem;
+  font-weight: 10;
+  color: $popUpTextValueColor;
+  border: 1px solid #37a3f8;
+  .approvals-card-div1 {
+    padding-left: 6px;
+  }
+  .approvals-card-div2 {
+    display: grid;
+    justify-items: end;
+    font-size: 0.5rem;
+    padding-right: 6px;
+    float: right;
+  }
+}

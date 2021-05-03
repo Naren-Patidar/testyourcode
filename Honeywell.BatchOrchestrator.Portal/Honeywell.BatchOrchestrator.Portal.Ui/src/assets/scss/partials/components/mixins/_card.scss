@@ -1,0 +1,39 @@
+//
+// Custom card variations
+//
+
+@mixin forge-card($theme: 'dark') {
+  .ui.card {
+    border-radius: 0.375rem !important;
+    &.raised {
+      box-shadow: none !important;
+    }
+
+    // background: #272727 !important;
+    // padding: 1.25rem !important;
+
+    .content {
+      border-radius: 0.75rem !important;
+      &.border{
+      border-top-width: 1px !important;
+      border-top-style: solid !important;
+      }
+    }
+
+    $content-border-color: '';
+    @if ($theme == 'dark') {
+      $content-border-color: rgba(gray-accent-color('light-100'), 0.75);
+    } @else if ($theme == 'light') {
+    }
+
+    @include forge-card-theme($content-border-color);
+  }
+}
+
+@mixin forge-card-theme($content-border-color: '') {
+  .content {
+    &.border {
+      border: $default-border-width $default-border-style $content-border-color !important;
+    }
+  }
+}

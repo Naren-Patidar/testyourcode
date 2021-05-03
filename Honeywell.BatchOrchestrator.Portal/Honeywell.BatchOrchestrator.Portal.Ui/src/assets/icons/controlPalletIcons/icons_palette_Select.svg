@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="20px" viewBox="0 0 47 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>551915D2-2818-49D4-A9AF-515BAA7D81A1@2x</title>
+    <defs>
+        <path d="M8,9.29289322 L4.35355339,5.64644661 C4.15829124,5.45118446 3.84170876,5.45118446 3.64644661,5.64644661 C3.45118446,5.84170876 3.45118446,6.15829124 3.64644661,6.35355339 L7.64644661,10.3535534 C7.84170876,10.5488155 8.15829124,10.5488155 8.35355339,10.3535534 L12.3535534,6.35355339 C12.5488155,6.15829124 12.5488155,5.84170876 12.3535534,5.64644661 C12.1582912,5.45118446 11.8417088,5.45118446 11.6464466,5.64644661 L8,9.29289322 Z" id="path-1"></path>
+    </defs>
+    <g id="Collections" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rich-content-palette" transform="translate(-251.000000, -237.000000)">
+            <g id="icons/palette/Select" transform="translate(251.000000, 237.000000)">
+                <rect id="Rectangle" fill="#404040" x="0" y="0" width="47" height="20" rx="4"></rect>
+                <g id="Trailing-Icon" transform="translate(26.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)" fill="#808080">
+                        <g id="Color">
+                            <rect x="0" y="0" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

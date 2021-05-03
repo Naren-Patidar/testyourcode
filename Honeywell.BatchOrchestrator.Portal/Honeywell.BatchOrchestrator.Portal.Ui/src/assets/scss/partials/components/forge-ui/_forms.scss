@@ -1,0 +1,16 @@
+//
+// Scuf overrides
+//
+
+// Form elements
+
+// Themes
+html.honeywell-dark-theme {
+  $theme: 'dark';
+  @include forge-form-elements($theme);
+}
+
+html:not(.honeywell-dark-theme) {
+  $theme: 'light';
+  @include forge-form-elements($theme);
+}

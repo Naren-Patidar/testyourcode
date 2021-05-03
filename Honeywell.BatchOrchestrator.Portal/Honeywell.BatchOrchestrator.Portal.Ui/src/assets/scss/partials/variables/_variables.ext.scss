@@ -1,0 +1,667 @@
+//
+// To make future updates easier consider overriding the global variables from _variables.bootstrap.scss and _variables.custom.scss in this file.
+// Note that this file is included first and variables defined in _variables.bootstrap.scss and _variables.custom.scss
+// are not accessible in this file but you can override any global variable as shown below:
+//
+
+$default-border-width: 0.0625rem;
+$default-border-radius: 0.275rem;
+$default-border-style: solid;
+
+// Theme colors
+$transparent: transparent;
+
+$gray-dark-000: #808080;
+$gray-dark-100: #909090;
+$gray-dark-200: #a0a0a0;
+$gray-dark-300: #b0b0b0;
+$gray-dark-400: #c0c0c0;
+$gray-dark-500: #d0d0d0;
+$gray-dark-600: #e0e0e0;
+$gray-dark-700: #f0f0f0;
+$gray-dark-800: #f7f7f7;
+$gray-dark-900: #ffffff;
+
+$gray-light-000: #808080;
+$gray-light-100: #707070;
+$gray-light-200: #606060;
+$gray-light-300: #505050;
+$gray-light-400: #404040;
+$gray-light-500: #303030;
+$gray-light-550: #262626;
+$gray-light-600: #202020;
+$gray-light-700: #101010;
+$gray-light-800: #080808;
+$gray-light-900: #000000;
+
+$blue-dark-000: #1792e5;
+$blue-dark-100: #37a3f8;
+$blue-dark-200: #64c3ff;
+$blue-dark-300: #88ddff;
+$blue-dark-400: #9df1ff;
+$blue-dark-500: #c6f9ff;
+
+$blue-light-000: #1792e5;
+$blue-light-100: #0072c2;
+$blue-light-200: #005eac;
+$blue-light-300: #004993;
+$blue-light-400: #00357c;
+$blue-light-500: #002b62;
+
+$green-dark-000: #6d9520;
+$green-dark-100: #80b43a;
+$green-dark-200: #99cd52;
+$green-dark-300: #bfeb6b;
+$green-dark-400: #c9fe80;
+$green-dark-500: #dbffa8;
+
+$green-light-000: #6d9520;
+$green-light-100: #607e02;
+$green-light-200: #486800;
+$green-light-300: #325200;
+$green-light-400: #204100;
+$green-light-500: #1d3400;
+
+$yellow-dark-000: #a88d35;
+$yellow-dark-100: #d6b133;
+$yellow-dark-200: #ffc527;
+$yellow-dark-300: #ffdb42;
+$yellow-dark-400: #fff55d;
+$yellow-dark-500: #fff894;
+
+$yellow-light-000: #a88d35;
+$yellow-light-100: #88752d;
+$yellow-light-200: #7a652a;
+$yellow-light-300: #695323;
+$yellow-light-400: #58461c;
+$yellow-light-500: #473919;
+
+$orange-dark-000: #e36211;
+$orange-dark-100: #f77224;
+$orange-dark-200: #ff9847;
+$orange-dark-300: #ffb966;
+$orange-dark-400: #ffd883;
+$orange-dark-500: #ffe4aa;
+
+$orange-light-000: #e36211;
+$orange-light-100: #ca4d00;
+$orange-light-200: #b54400;
+$orange-light-300: #953d00;
+$orange-light-400: #7d2f00;
+$orange-light-500: #642801;
+
+$red-dark-000: #ee3124;
+$red-dark-100: #ff644c;
+$red-dark-200: #ff8b6f;
+$red-dark-300: #ffad8e;
+$red-dark-400: #ffc7a6;
+$red-dark-500: #ffdcc2;
+
+$red-light-000: #ee3124;
+$red-light-100: #d60b13;
+$red-light-200: #c00003;
+$red-light-300: #a00000;
+$red-light-400: #860000;
+$red-light-500: #6c0000;
+
+// Text muted
+$text-muted: $gray-dark-000;
+
+$grays: (
+  'dark-000': $gray-dark-000,
+  'dark-100': $gray-dark-100,
+  'dark-200': $gray-dark-200,
+  'dark-300': $gray-dark-300,
+  'dark-400': $gray-dark-400,
+  'dark-500': $gray-dark-500,
+  'dark-600': $gray-dark-600,
+  'dark-700': $gray-dark-700,
+  'dark-800': $gray-dark-800,
+  'dark-900': $gray-dark-900,
+  'light-000': $gray-light-000,
+  'light-100': $gray-light-100,
+  'light-200': $gray-light-200,
+  'light-300': $gray-light-300,
+  'light-400': $gray-light-400,
+  'light-500': $gray-light-500,
+  'light-550': $gray-light-550,
+  'light-600': $gray-light-600,
+  'light-700': $gray-light-700,
+  'light-800': $gray-light-800,
+  'light-900': $gray-light-900,
+);
+
+$base-theme-palette: (
+  'primary-dark': $blue-light-000,
+  'secondary-dark': $gray-dark-200,
+  'success-dark': $green-light-100,
+  'info-dark': $blue-dark-200,
+  'caution-dark': $yellow-dark-200,
+  'warning-dark': $orange-dark-100,
+  'danger-dark': $red-light-000,
+  'danger': $red-light-200
+  // 'primary-light': $blue-light-000,
+  // 'secondary-light': $gray-dark-200,
+  // 'success-light': $green-light-100,
+  // 'caution-light': $yellow-light-200,
+  // 'warning-light': $orange-light-100,
+  // 'error-light': $red-dark-200,,
+);
+
+$hover-theme-palette: (
+  'primary-dark': $blue-dark-200,
+  'secondary-dark': $gray-dark-400,
+  'success-dark': $green-dark-000,
+  'info-dark': $blue-dark-200,
+  'caution-dark': $yellow-dark-100,
+  'warning-dark': $orange-dark-200,
+  'danger-dark': $red-dark-000,
+);
+
+$active-theme-palette: (
+  'primary-dark': $blue-light-100,
+  'secondary-dark': $gray-dark-000,
+  'success-dark': $green-light-200,
+  'info-dark': $blue-dark-200,
+  'caution-dark': $yellow-dark-000,
+  'warning-dark': $orange-light-100,
+  'danger-dark': $red-light-300,
+);
+
+$disabled-theme-palette: (
+  'primary-dark': $gray-light-100,
+  'secondary-dark': $gray-light-100,
+  'success-dark': $gray-light-100,
+  'info-dark': $gray-light-100,
+  'caution-dark': $gray-light-200,
+  'warning-dark': $gray-light-100,
+  'danger-dark': $gray-light-100,
+);
+
+$inverse-theme-palette: (
+  'primary-dark': $gray-light-500,
+  'secondary-dark': $gray-light-500,
+  'success-dark': $gray-dark-700,
+  'info-dark': $blue-dark-200,
+  'caution-dark': $gray-light-500,
+  'warning-dark': $gray-light-500,
+  'danger-dark': $gray-dark-700,
+);
+
+$hover-inverse-theme-palette: (
+  'primary-dark': $gray-light-500,
+  'secondary-dark': $gray-light-500,
+  'success-dark': $gray-light-500,
+  'info-dark': $blue-dark-200,
+  'caution-dark': $gray-light-500,
+  'warning-dark': $gray-light-500,
+  'danger-dark': $gray-dark-700,
+);
+
+$active-inverse-theme-palette: (
+  'primary-dark': $gray-dark-700,
+  'secondary-dark': $gray-dark-700,
+  'success-dark': $gray-dark-700,
+  'info-dark': $blue-dark-200,
+  'caution-dark': $gray-dark-700,
+  'warning-dark': $gray-dark-700,
+  'danger-dark': $gray-dark-700,
+);
+
+$disabled-inverse-theme-palette: (
+  'primary-dark': $gray-light-500,
+  'secondary-dark': $gray-light-500,
+  'success-dark': $gray-light-500,
+  'info-dark': $gray-light-500,
+  'caution-dark': $gray-light-500,
+  'warning-dark': $gray-light-500,
+  'danger-dark': $gray-light-500,
+);
+
+$outline-inverse-theme-palette: (
+  'primary-dark': $gray-light-500,
+  'secondary-dark': $gray-light-500,
+  'success-dark': $gray-light-500,
+  'info-dark': $gray-dark-000,
+  'caution-dark': $gray-light-500,
+  'warning-dark': $gray-light-500,
+  'danger-dark': $gray-dark-700,
+);
+
+$outline-disabled-inverse-theme-palette: (
+  'primary-dark': $gray-dark-000,
+  'secondary-dark': $gray-dark-000,
+  'success-dark': $gray-dark-000,
+  'info-dark': $gray-dark-000,
+  'caution-dark': $gray-dark-000,
+  'warning-dark': $gray-dark-000,
+  'danger-dark': $gray-dark-000,
+);
+
+$dark-forge-theme: (
+  //
+  // primary
+  //
+  'primary-gradient-2': #45adf7,
+  'primary-hover-gradient-2': #45adf7,
+  // Bootstrap variable
+  'primary': base-theme-palette-color('primary-dark'),
+  // $primary,
+  'primary-border': base-theme-palette-color('primary-dark'),
+  // $primary,
+  // Custom variables
+  'primary-hover': hover-theme-palette-color('primary-dark'),
+  // $primary-hover,
+  'primary-hover-border': hover-theme-palette-color('primary-dark'),
+  // $primary-hover,
+  'primary-active': active-theme-palette-color('primary-dark'),
+  // $primary-active,
+  'primary-active-border': active-theme-palette-color('primary-dark'),
+  // $primary-active,
+  'primary-disabled': disabled-theme-palette-color('primary-dark'),
+  // $primary-disabled,
+  'primary-disabled-border': disabled-theme-palette-color('primary-dark'),
+  // $primary-disabled,
+  // 'primary-light': $primary-light,
+  'primary-inverse': inverse-theme-palette-color('primary-dark'),
+  // $primary-inverse,
+  'primary-hover-inverse': hover-inverse-theme-palette-color('primary-dark'),
+  // $primary-hover-inverse,
+  'primary-active-inverse': active-inverse-theme-palette-color('primary-dark'),
+  // $primary-active-inverse,
+  'primary-disabled-inverse':
+    disabled-inverse-theme-palette-color('primary-dark'),
+  // $primary-disabled-inverse,
+  //
+  // secondary
+  //
+  // Bootstrap variable
+  'secondary': base-theme-palette-color('secondary-dark'),
+  // $secondary,
+  'secondary-border': base-theme-palette-color('secondary-dark'),
+  // $primary,
+  // Custom variables
+  'secondary-hover': hover-theme-palette-color('secondary-dark'),
+  // $secondary-hover,
+  'secondary-hover-border': hover-theme-palette-color('secondary-dark'),
+  // $secondary-hover,
+  'secondary-active': active-theme-palette-color('secondary-dark'),
+  // $secondary-active,
+  'secondary-active-border': active-theme-palette-color('secondary-dark'),
+  // $secondary-active,
+  'secondary-disabled': disabled-theme-palette-color('secondary-dark'),
+  // $secondary-disabled,
+  'secondary-disabled-border': disabled-theme-palette-color('secondary-dark'),
+  // 'secondary-light': #e1f0ff,
+  'secondary-inverse': inverse-theme-palette-color('secondary-dark'),
+  // $secondary-inverse,
+  'secondary-hover-inverse': hover-inverse-theme-palette-color(
+      'secondary-dark'
+    ),
+  // $secondary-hover-inverse,
+  'secondary-active-inverse':
+    active-inverse-theme-palette-color('secondary-dark'),
+  // $secondary-active-inverse,
+  'secondary-disabled-inverse':
+    disabled-inverse-theme-palette-color('secondary-dark'),
+  // $secondary-disabled-inverse
+  //
+  // success
+  //
+  // Bootstrap variable
+  'success': base-theme-palette-color('success-dark'),
+  // $secondary,
+  'success-border': base-theme-palette-color('success-dark'),
+  // $primary,
+  // Custom variables
+  'success-hover': hover-theme-palette-color('success-dark'),
+  // $secondary-hover,
+  'success-hover-border': hover-theme-palette-color('success-dark'),
+  // $secondary-hover,
+  'success-active': active-theme-palette-color('success-dark'),
+  // $secondary-active,
+  'success-active-border': active-theme-palette-color('success-dark'),
+  // $secondary-active,
+  'success-disabled': disabled-theme-palette-color('success-dark'),
+  // $secondary-disabled,
+  'success-disabled-border': disabled-theme-palette-color('success-dark'),
+  // 'secondary-light': #e1f0ff,
+  'success-inverse': inverse-theme-palette-color('success-dark'),
+  // $secondary-inverse,
+  'success-hover-inverse': hover-inverse-theme-palette-color('success-dark'),
+  // $secondary-hover-inverse,
+  'success-active-inverse': active-inverse-theme-palette-color('success-dark'),
+  // $secondary-active-inverse,
+  'success-disabled-inverse':
+    disabled-inverse-theme-palette-color('success-dark'),
+  // $secondary-disabled-inverse
+  //
+  // caution
+  //
+  // Bootstrap variable
+  'caution': base-theme-palette-color('caution-dark'),
+  // $secondary,
+  'caution-border': base-theme-palette-color('caution-dark'),
+  // $primary,
+  // Custom variables
+  'caution-hover': hover-theme-palette-color('caution-dark'),
+  // $secondary-hover,
+  'caution-hover-border': hover-theme-palette-color('caution-dark'),
+  // $secondary-hover,
+  'caution-active': active-theme-palette-color('caution-dark'),
+  // $secondary-active,
+  'caution-active-border': active-theme-palette-color('caution-dark'),
+  // $secondary-active,
+  'caution-disabled': disabled-theme-palette-color('caution-dark'),
+  // $secondary-disabled,
+  'caution-disabled-border': disabled-theme-palette-color('caution-dark'),
+  // 'secondary-light': #e1f0ff,
+  'caution-inverse': inverse-theme-palette-color('caution-dark'),
+  // $secondary-inverse,
+  'caution-hover-inverse': hover-inverse-theme-palette-color('caution-dark'),
+  // $secondary-hover-inverse,
+  'caution-active-inverse': active-inverse-theme-palette-color('caution-dark'),
+  // $secondary-active-inverse,
+  'caution-disabled-inverse':
+    disabled-inverse-theme-palette-color('caution-dark'),
+  // $secondary-disabled-inverse
+  //
+  // warning
+  //
+  // Bootstrap variable
+  'warning': base-theme-palette-color('warning-dark'),
+  // $secondary,
+  'warning-border': base-theme-palette-color('warning-dark'),
+  // $primary,
+  // Custom variables
+  'warning-hover': hover-theme-palette-color('warning-dark'),
+  // $secondary-hover,
+  'warning-hover-border': hover-theme-palette-color('warning-dark'),
+  // $secondary-hover,
+  'warning-active': active-theme-palette-color('warning-dark'),
+  // $secondary-active,
+  'warning-active-border': active-theme-palette-color('warning-dark'),
+  // $secondary-active,
+  'warning-disabled': disabled-theme-palette-color('warning-dark'),
+  // $secondary-disabled,
+  'warning-disabled-border': disabled-theme-palette-color('warning-dark'),
+  // 'secondary-light': #e1f0ff,
+  'warning-inverse': inverse-theme-palette-color('warning-dark'),
+  // $secondary-inverse,
+  'warning-hover-inverse': hover-inverse-theme-palette-color('warning-dark'),
+  // $secondary-hover-inverse,
+  'warning-active-inverse': active-inverse-theme-palette-color('warning-dark'),
+  // $secondary-active-inverse,
+  'warning-disabled-inverse':
+    disabled-inverse-theme-palette-color('warning-dark'),
+  // $secondary-disabled-inverse
+  //
+  // danger
+  //
+  // Bootstrap variable
+  'danger': base-theme-palette-color('danger-dark'),
+  // $secondary,
+  'danger-border': base-theme-palette-color('danger-dark'),
+  // $primary,
+  // Custom variables
+  'danger-hover': hover-theme-palette-color('danger-dark'),
+  // $secondary-hover,
+  'danger-hover-border': hover-theme-palette-color('danger-dark'),
+  // $secondary-hover,
+  'danger-active': active-theme-palette-color('danger-dark'),
+  // $secondary-active,
+  'danger-active-border': active-theme-palette-color('danger-dark'),
+  // $secondary-active,
+  'danger-disabled': disabled-theme-palette-color('danger-dark'),
+  // $secondary-disabled,
+  'danger-disabled-border': disabled-theme-palette-color('danger-dark'),
+  // 'secondary-light': #e1f0ff,
+  'danger-inverse': inverse-theme-palette-color('danger-dark'),
+  // $secondary-inverse,
+  'danger-hover-inverse': hover-inverse-theme-palette-color('danger-dark'),
+  // $secondary-hover-inverse,
+  'danger-active-inverse': active-inverse-theme-palette-color('danger-dark'),
+  // $secondary-active-inverse,
+  'danger-disabled-inverse': disabled-inverse-theme-palette-color(
+      'danger-dark'
+    ),
+  // $secondary-disabled-inverse
+  //
+  // outline-primary
+  //
+  // Bootstrap variable
+  'outline-primary': $transparent,
+  // base-theme-palette-color("secondary-dark"), // $secondary,
+  'outline-primary-border': base-theme-palette-color('primary-dark'),
+  // $primary,
+  // Custom variables
+  'outline-primary-hover': hover-theme-palette-color('primary-dark'),
+  // $secondary-hover,
+  'outline-primary-hover-border': hover-theme-palette-color('primary-dark'),
+  // $secondary-hover,
+  'outline-primary-active': active-theme-palette-color('primary-dark'),
+  // $secondary-active,
+  'outline-primary-active-border': active-theme-palette-color('primary-dark'),
+  // $secondary-active,
+  'outline-primary-disabled': $transparent,
+  // $secondary-disabled,
+  'outline-primary-disabled-border': $gray-dark-100,
+  // 'secondary-light': #e1f0ff,
+  'outline-primary-inverse': base-theme-palette-color('primary-dark'),
+  // $secondary-inverse,
+  'outline-primary-hover-inverse':
+    outline-inverse-theme-palette-color('primary-dark'),
+  // $secondary-hover-inverse,
+  'outline-primary-active-inverse':
+    active-inverse-theme-palette-color('primary-dark'),
+  // $secondary-active-inverse,
+  'outline-primary-disabled-inverse':
+    outline-disabled-inverse-theme-palette-color('primary-dark'),
+  // $secondary-disabled-inverse
+  //
+  // outline-secondary
+  //
+  // Bootstrap variable
+  'outline-secondary': $transparent,
+  // base-theme-palette-color("secondary-dark"), // $secondary,
+  'outline-secondary-border': base-theme-palette-color('secondary-dark'),
+  // $primary,
+  // Custom variables
+  'outline-secondary-hover': hover-theme-palette-color('secondary-dark'),
+  // $secondary-hover,
+  'outline-secondary-hover-border': hover-theme-palette-color('secondary-dark'),
+  // $secondary-hover,
+  'outline-secondary-active': active-theme-palette-color('secondary-dark'),
+  // $secondary-active,
+  'outline-secondary-active-border':
+    active-theme-palette-color('secondary-dark'),
+  // $secondary-active,
+  'outline-secondary-disabled': $transparent,
+  // $secondary-disabled,
+  'outline-secondary-disabled-border': $gray-dark-100,
+  // 'secondary-light': #e1f0ff,
+  'outline-secondary-inverse': base-theme-palette-color('secondary-dark'),
+  // $secondary-inverse,
+  'outline-secondary-hover-inverse':
+    outline-inverse-theme-palette-color('secondary-dark'),
+  // $secondary-hover-inverse,
+  'outline-secondary-active-inverse':
+    active-inverse-theme-palette-color('secondary-dark'),
+  // $secondary-active-inverse,
+  'outline-secondary-disabled-inverse':
+    outline-disabled-inverse-theme-palette-color('secondary-dark'),
+  // $secondary-disabled-inverse
+  //
+  // outline-success
+  //
+  // Bootstrap variable
+  'outline-success': $transparent,
+  // $secondary,
+  'outline-success-border': base-theme-palette-color('success-dark'),
+  // $primary,
+  // Custom variables
+  'outline-success-hover': hover-theme-palette-color('success-dark'),
+  // $secondary-hover,
+  'outline-success-hover-border': hover-theme-palette-color('success-dark'),
+  // $secondary-hover,
+  'outline-success-active': active-theme-palette-color('success-dark'),
+  // $secondary-active,
+  'outline-success-active-border': active-theme-palette-color('success-dark'),
+  // $secondary-active,
+  'outline-success-disabled': $transparent,
+  // $secondary-disabled,
+  'outline-success-disabled-border':
+    outline-disabled-inverse-theme-palette-color('success-dark'),
+  // 'secondary-light': #e1f0ff,
+  'outline-success-inverse': base-theme-palette-color('success-dark'),
+  // $secondary-inverse,
+  'outline-success-hover-inverse':
+    outline-inverse-theme-palette-color('success-dark'),
+  // $secondary-hover-inverse,
+  'outline-success-active-inverse':
+    active-inverse-theme-palette-color('success-dark'),
+  // $secondary-active-inverse,
+  'outline-success-disabled-inverse':
+    outline-disabled-inverse-theme-palette-color('success-dark'),
+  // $secondary-disabled-inverse
+  //
+  // outline-caution
+  //
+  // Bootstrap variable
+  'outline-caution': $transparent,
+  // $secondary,
+  'outline-caution-border': base-theme-palette-color('caution-dark'),
+  // $primary,
+  // Custom variables
+  'outline-caution-hover': hover-theme-palette-color('caution-dark'),
+  // $secondary-hover,
+  'outline-caution-hover-border': hover-theme-palette-color('caution-dark'),
+  // $secondary-hover,
+  'outline-caution-active': active-theme-palette-color('caution-dark'),
+  // $secondary-active,
+  'outline-caution-active-border': active-theme-palette-color('caution-dark'),
+  // $secondary-active,
+  'outline-caution-disabled': $transparent,
+  // $secondary-disabled,
+  'outline-caution-disabled-border':
+    outline-disabled-inverse-theme-palette-color('caution-dark'),
+  // 'secondary-light': #e1f0ff,
+  'outline-caution-inverse': base-theme-palette-color('caution-dark'),
+  // $secondary-inverse,
+  'outline-caution-hover-inverse':
+    outline-inverse-theme-palette-color('caution-dark'),
+  // $secondary-hover-inverse,
+  'outline-caution-active-inverse':
+    active-inverse-theme-palette-color('caution-dark'),
+  // $secondary-active-inverse,
+  'outline-caution-disabled-inverse':
+    outline-disabled-inverse-theme-palette-color('caution-dark'),
+  // $secondary-disabled-inverse
+  //
+  // outline-warning
+  //
+  // Bootstrap variable
+  'outline-warning': $transparent,
+  // $secondary,
+  'outline-warning-border': base-theme-palette-color('warning-dark'),
+  // $primary,
+  // Custom variables
+  'outline-warning-hover': hover-theme-palette-color('warning-dark'),
+  // $secondary-hover,
+  'outline-warning-hover-border': hover-theme-palette-color('warning-dark'),
+  // $secondary-hover,
+  'outline-warning-active': active-theme-palette-color('warning-dark'),
+  // $secondary-active,
+  'outline-warning-active-border': active-theme-palette-color('warning-dark'),
+  // $secondary-active,
+  'outline-warning-disabled': $transparent,
+  // $secondary-disabled,
+  'outline-warning-disabled-border':
+    outline-disabled-inverse-theme-palette-color('warning-dark'),
+  // 'secondary-light': #e1f0ff,
+  'outline-warning-inverse': base-theme-palette-color('warning-dark'),
+  // $secondary-inverse,
+  'outline-warning-hover-inverse':
+    outline-inverse-theme-palette-color('warning-dark'),
+  // $secondary-hover-inverse,
+  'outline-warning-active-inverse':
+    active-inverse-theme-palette-color('warning-dark'),
+  // $secondary-active-inverse,
+  'outline-warning-disabled-inverse':
+    outline-disabled-inverse-theme-palette-color('warning-dark'),
+  // $secondary-disabled-inverse
+  //
+  // outline-danger
+  //
+  // Bootstrap variable
+  'outline-danger': $transparent,
+  // $secondary,
+  'outline-danger-border': base-theme-palette-color('danger-dark'),
+  // $primary,
+  // Custom variables
+  'outline-danger-hover': hover-theme-palette-color('danger-dark'),
+  // $secondary-hover,
+  'outline-danger-hover-border': hover-theme-palette-color('danger-dark'),
+  // $secondary-hover,
+  'outline-danger-active': active-theme-palette-color('danger-dark'),
+  // $secondary-active,
+  'outline-danger-active-border': active-theme-palette-color('danger-dark'),
+  // $secondary-active,
+  'outline-danger-disabled': $transparent,
+  // $secondary-disabled,
+  'outline-danger-disabled-border':
+    outline-disabled-inverse-theme-palette-color('danger-dark'),
+  // 'secondary-light': #e1f0ff,
+  'outline-danger-inverse': base-theme-palette-color('danger-dark'),
+  // $secondary-inverse,
+  'outline-danger-hover-inverse':
+    outline-inverse-theme-palette-color('danger-dark'),
+  // $secondary-hover-inverse,
+  'outline-danger-active-inverse':
+    active-inverse-theme-palette-color('danger-dark'),
+  // $secondary-active-inverse,
+  'outline-danger-disabled-inverse':
+    outline-disabled-inverse-theme-palette-color('danger-dark'),
+  // $secondary-disabled-inverse
+);
+
+$light-forge-theme: (
+  //
+  // primary
+  //
+  'primary-gradient-2': #45adf7,
+  'primary-hover-gradient-2': #45adf7,
+  // Bootstrap variable
+  'primary': $blue-dark-000,
+  'primary-border': $blue-dark-000,
+  // Custom variables
+  'primary-hover': $blue-dark-200,
+  'primary-hover-border': $blue-dark-200,
+  'primary-active': $blue-light-100,
+  'primary-active-border': $blue-light-100,
+  'primary-disabled': $gray-dark-100,
+  'primary-disabled-border': $gray-dark-100,
+  'primary-light': #e1f0ff,
+  'primary-inverse': $gray-dark-500,
+  'primary-hover-inverse': $gray-dark-500,
+  'primary-active-inverse': $gray-light-500,
+  'primary-disabled-inverse': $gray-dark-500,
+  //
+  // secondary
+  //
+  // Bootstrap variable
+  'secondary': transparent,
+  'secondary-border': $blue-dark-000,
+  // Custom variables
+  'secondary-hover': $blue-dark-200,
+  'secondary-hover-border': $blue-dark-200,
+  'secondary-active': $blue-light-100,
+  'secondary-active-border': $blue-light-100,
+  'secondary-disabled': transparent,
+  'secondary-disabled-border': $gray-dark-100,
+  'secondary-light': #e1f0ff,
+  'secondary-inverse': $blue-dark-200,
+  'secondary-hover-inverse': $gray-dark-500,
+  'secondary-active-inverse': $gray-light-500,
+  'secondary-disabled-inverse': $gray-dark-100
+);

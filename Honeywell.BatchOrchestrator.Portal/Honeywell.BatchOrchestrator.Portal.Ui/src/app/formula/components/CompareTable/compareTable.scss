@@ -1,0 +1,133 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.compareTable {
+  border-top: 1px solid #262626;
+  .compareTable-content {
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // // overflow: scroll;
+    // height: 57%;
+    .TableRow_dot {
+      height: 8px;
+      width: 8px;
+      background-color: yellow;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .TableRow-popup-details {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-column-align: start;
+      justify-items: start;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      -ms-grid-row-align: start;
+      align-items: start;
+      padding: 0.25rem;
+    }
+  }
+}
+
+.compareTable .ui.forge-datatable-wrap .p-datatable .p-datatable-thead th {
+  background: #262626 !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable.p-datatable-scrollable
+  .p-datatable-scrollable-header-box {
+  background: #262626 !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr:nth-child(odd) {
+  background-color: #262626 !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr.selected-row:nth-child(odd) {
+  background-color: #202020 !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr:nth-child(odd):hover {
+  background: #303030 0% 0% no-repeat padding-box !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr:nth-child(even) {
+  background-color: #262626 !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr:nth-child(even):hover {
+  background: #303030 0% 0% no-repeat padding-box !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr.selected-row:nth-child(even) {
+  background-color: #202020 !important;
+}
+
+.compareTable
+  .ui.forge-datatable-wrap
+  .p-datatable
+  tbody.p-datatable-tbody
+  > tr
+  > td
+  .cell-data-wrap {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  position: relative;
+  padding: 5px 1rem 5px 0.5rem;
+}
+  // Raw Material Icon
+  .raw {
+    // height: 0.667rem;
+    // width: 0.667rem;
+    // margin: 0 0.5rem 0 0;
+    // float: left;
+
+    &.editable {
+      cursor: pointer;
+      width: 100%;
+    }
+
+    &.raw-true {
+      color: #1792e5;
+    }
+
+    &.raw-false {
+      // border: 0.04167rem solid #707070;
+      // font-size: 0.8rem;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-content: center;
+      color: #707070;
+      // text-align: center;
+    }
+  }

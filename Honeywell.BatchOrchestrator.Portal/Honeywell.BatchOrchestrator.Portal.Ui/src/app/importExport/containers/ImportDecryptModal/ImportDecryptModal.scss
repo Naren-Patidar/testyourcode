@@ -1,0 +1,23 @@
+.impexp-modal {
+    .header {
+        h6 {
+            font-size: 1rem;
+        }
+    }
+    .ui.single-input {
+        .input-label-message {
+            font-weight: 400 !important;
+        }
+        .input-wrap { 
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+.import-actions {
+    .ui.list > .item .header {
+        display: none;
+    }
+}

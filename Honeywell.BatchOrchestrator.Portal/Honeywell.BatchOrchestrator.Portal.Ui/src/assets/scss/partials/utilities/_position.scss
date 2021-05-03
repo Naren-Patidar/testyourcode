@@ -1,0 +1,88 @@
+//
+// Positions
+//
+
+.left-0 {
+  left: 0 !important;
+}
+
+.right-0 {
+  right: 0 !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+.zindex-0 {
+  z-index: 0;
+}
+
+.zindex-n1 {
+  z-index: -1;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
+}
+
+.zindex-4 {
+  z-index: 4;
+}
+
+.zindex-5 {
+  z-index: 5;
+}
+
+// -----------------------------------------------------------------------------------------------------
+// @ Position helpers
+// -----------------------------------------------------------------------------------------------------
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .position#{$infix}-relative {
+      position: relative;
+    }
+
+    .position#{$infix}-relative-force {
+      position: relative !important;
+    }
+
+    .position#{$infix}-absolute {
+      position: absolute;
+    }
+
+    .position#{$infix}-absolute-force {
+      position: absolute !important;
+    }
+
+    .position#{$infix}-static {
+      position: static;
+    }
+
+    .position#{$infix}-static-force {
+      position: static !important;
+    }
+
+    .position#{$infix}-fixed {
+      position: fixed;
+    }
+
+    .position#{$infix}-fixed-force {
+      position: fixed !important;
+    }
+  }
+}

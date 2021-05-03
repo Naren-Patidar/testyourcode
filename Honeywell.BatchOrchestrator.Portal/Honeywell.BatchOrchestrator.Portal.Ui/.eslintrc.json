@@ -1,0 +1,40 @@
+{
+  "extends": ["airbnb-typescript-prettier"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
+  },
+  "ignorePatterns": "*.test.*",
+  "rules": {
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0,
+    "react/static-property-placement": 0,
+    "jsx-a11y/alt-text": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "react/no-unused-state": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

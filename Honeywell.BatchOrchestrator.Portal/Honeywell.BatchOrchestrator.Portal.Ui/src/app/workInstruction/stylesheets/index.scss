@@ -1,0 +1,77 @@
+@import "../../../assets/stylesheets/colors.scss";
+@import "../../../assets/stylesheets/fonts.scss";
+
+// Customized CSS
+// Font-Sizes
+$font-8: 8px !important;
+$font-9: 9px !important;;
+$font-10: 10px !important;;
+$font-11: 11px !important;;
+$font-12: 12px !important;;
+$font-13: 13px !important;;
+$font-14: 14px !important;;
+$font-15: 15px !important;;
+$font-16: 16px !important;;
+
+.containerApp {
+  background: #252525 !important;
+}
+.main {
+  padding: 0;
+  display: contents;
+}
+button {
+  min-width: auto !important;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.28571429em !important;
+  // margin: calc(2rem - .14286em) 0 1rem !important;
+  font-weight: 600 !important;
+  padding: 0 !important;
+  font-size: 1rem !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  width: 6px;
+}
+
+/* Track */
+// ::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 5px grey;
+//   // border-radius: 10px;
+// }
+
+/* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #707070b3 0% 0% no-repeat padding-box;
+//   border-radius: 3px;
+// }
+
+/* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #707070b3 0% 0% no-repeat padding-box;
+//   border-radius: 4px;
+//   width: 8px;
+// }
+
+// Scrollbar css for IE
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    /* ie scrollbar color properties */
+    scrollbar-base-color: #303030;
+    scrollbar-face-color: #707070b3;
+    scrollbar-3dlight-color: #707070b3;
+    scrollbar-highlight-color: #707070b3;
+    scrollbar-track-color: #707070b3;
+    scrollbar-arrow-color: #707070b3;
+    scrollbar-shadow-color: #707070b3;
+  }
+}
+
+p {
+  font-family: 'Honeywell Sans Web';
+}
+

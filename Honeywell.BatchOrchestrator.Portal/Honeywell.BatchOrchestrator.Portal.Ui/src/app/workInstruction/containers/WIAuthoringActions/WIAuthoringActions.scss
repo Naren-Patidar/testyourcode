@@ -1,0 +1,119 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.action-button-list {
+  display: -webkit-box !important;
+  display: block !important;
+  .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+  }
+  .btn-secondary {
+    background: $borderColor !important;
+    color: #fff !important;
+    border: none !important;
+    &:focus {
+      box-shadow: none !important;
+    }
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none !important;
+    }
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+}
+
+.approval-screen {
+  .preview-star {    
+    color: #4a90e2;
+    font-size: large;
+    padding-left: 5px;
+    position: absolute;
+    top: 5px;
+  }
+  .title-star:after {    
+    color: #4a90e2;
+    content: "*";
+    font-size: large;
+    padding-left: 5px;
+    position: absolute;
+    z-index: 2;
+  }
+  .addstar-icon .title:after {
+    content: "*";
+    color: #4a90e2;
+    font-size: large;
+    padding-left: 5px;
+    position: absolute;
+    top: 4px;
+  }
+  .ewi-title.hightlighter {
+    background-color: rgb(185 230 135 / 85%) !important;
+  }
+  #intructiontitle.hightlighter {
+    .scuf-textarea-wrapper textarea:disabled {
+      background-color: rgb(185 230 135 / 85%) !important;
+      color: #fff !important;
+      overflow-y: auto;
+    }
+  }
+  .enforce-order {
+    &.hightlighter {
+      background-color: rgb(185 230 135 / 85%) !important;
+    }
+    &.addstar-icon:after {
+      content: "*";
+      color: #4a90e2;
+      font-size: large;
+      padding-left: 5px;
+      position: absolute;
+      top: 9px;
+    }
+  }
+  #tagsdata {
+    .tags-list .input-tag.hightlighter {
+      background-color: rgb(185 230 135 / 85%) !important;
+    }
+  }
+  .ewi-tasklist .ui.list .item .draggable-task {
+    &.task-edited:after {
+      content: "*";
+      font-size: large;
+      color: #4a90e2;
+      vertical-align: middle;
+      padding-left: 5px;
+    }
+    &.hightlighter .btn-secondary {
+      background-color: rgb(185 230 135 / 85%) !important;
+    }
+  }
+  .action-button-list {
+    #safetcheck {
+      .dropdown-menu.safety-list {
+        left: auto;
+        right: 100%;
+      } 
+      .item.hightlighter {
+        .content {
+          background-color: rgb(185 230 135 / 85%) !important;
+        }
+      }
+    }
+    #documentlink {
+      .dropdown-menu.link-doc {
+        left: auto;
+        right: 100%;
+      }
+      .documents-linked {
+        .item.hightlighter {
+          .content {
+            background-color: rgb(185 230 135 / 85%) !important;
+          }
+        }
+      }
+    }
+  }
+}

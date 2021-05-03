@@ -1,0 +1,82 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.ewi-description-container {
+  border: 1px solid #505050;
+  border-radius: 10px;
+  min-height: 145px;
+  display: block;
+  padding-top: 5px;
+  margin-bottom: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .ewi-title {
+    background: #404040;
+    padding: 7px 0px 7px 7px;
+    font-size: 12px;
+    font-family: 'Honeywell Sans Web';
+    border-radius: 5px;
+    width: 95%;
+  }
+  .single-input {
+    display: block;
+    &.ewi-title-edit {
+      .input-box {
+        border: none !important;
+      }
+      .input-wrap {
+        display: block;
+        width: 96%;
+        background-color: #202020 !important;
+        input {
+          width: 100%;
+          background-color: #202020 !important;
+        }
+      }
+    }
+    .below-text {
+      display: none;
+    }
+    &.error {
+      border: 0px solid transparent !important;
+      .input-wrap {
+        border: 2px solid #ff644c !important;
+      }
+      .below-text {
+        display: block;
+      }
+    }
+  }
+}
+.accordion.ui.fluid {
+  .title {
+    display: block;
+  }
+  &:not(.styled) .title ~ .content:not(.ui) {
+    padding-bottom: 5px !important;
+  }
+  .description-box {
+    .scuf-textarea-wrapper {
+      textarea {
+        resize: none;
+        border-radius: 10px;
+        min-height: 60px !important;
+        margin-left: 15px;
+        width: 96% !important;
+      }
+      .below-text {
+        display: none;
+      }
+      &.error {
+        border: 0px solid transparent !important;
+        .input-wrap {
+          border: 2px solid #ff644c !important;
+        }
+        .below-text {
+          display: block;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

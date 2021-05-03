@@ -1,0 +1,9 @@
+/* eslint-disable prettier/prettier */
+export const CREATE_BATCH = 'CREATE_BATCH';
+export const GET_UNITS_LIST = 'GET_UNITS_LIST';
+export const GET_FORMULA_PARAMS = 'GET_FORMULA_PARAMS';
+export const GET_ALL_FORMULASET = 'GET_ALL_FORMULASET';
+export const GET_FORMULA_LIST_BY_FORMULASETID =
+  'GET_FORMULA_LIST_BY_FORMULASETID';
+export const GET_REFRENCE_BATHCES = 'GET_REFRENCE_BATHCES';
+export const GET_BATCH_SIZE = 'GET_BATCH_SIZE';

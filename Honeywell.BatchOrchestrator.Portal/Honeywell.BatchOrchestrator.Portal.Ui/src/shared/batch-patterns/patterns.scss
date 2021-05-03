@@ -1,0 +1,66 @@
+.pattern{
+    margin-right: 0.5rem;
+    margin-top: 0.2rem; 
+  
+}
+.pattern-height{
+   height: auto;
+}
+.pattern-row-caption{
+    margin-bottom: 0.1rem;
+    margin-top: 0.5rem;
+}
+.pattern-rows{
+    height: auto;  
+ }
+ .txt-pattern{
+     width: 9rem !important;
+     height: 4.74vh !important;
+     background: #303030;
+     background-color: #404040;
+     color: #f0f0f0;
+     border: 1px solid #303030;
+     text-align: center
+ }
+.pattern-icon-close{
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+.pattern-icon-add{
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    padding-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.pattern-main-container{   
+    padding-left: 0.05rem; 
+    width: 9rem !important;    
+}
+
+.pattern-dependent-delimiter{   
+    padding-left: 0.05rem; 
+    width: 5rem !important;    
+}
+.pattern-dependent-year{   
+    padding-left: 0.05rem; 
+    width: 6rem !important;   
+}
+.pattern-dependent-month{   
+    padding-left: 0.05rem; 
+    width: 7rem !important;   
+}
+.pattern-dependent-auto-increment{   
+    padding-left: 0.05rem; 
+    width: 6rem !important;   
+}
+.pattern-txtbox{
+    .ui.single-input > .input-wrap > input {
+        height: 1.87rem !important;
+        width: 10rem !important;
+    }
+}
+
+

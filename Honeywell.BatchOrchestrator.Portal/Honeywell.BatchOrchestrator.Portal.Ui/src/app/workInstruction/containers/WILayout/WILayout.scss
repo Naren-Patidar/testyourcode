@@ -1,0 +1,57 @@
+@import "../../../../assets/stylesheets/colors.scss";
+@import "../../../../assets/stylesheets/fonts.scss";
+
+.wi-layout {
+  .ui.card.raised {
+    background: $containerBgColor;
+    // box-shadow: none !important;
+    overflow: visible;
+    max-height: 100%;
+    margin-top: 15px;
+    .content {
+      padding: 10px 5px;
+    }
+  }
+  .wi__search_input {
+    width: 99.5%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.wi-card-vertical-menu {
+  &.ui.popup.menu {
+    width: 125px;
+    margin-top: 0;
+    box-shadow: 0px 2px 30px 2px rgba(0, 0, 0, 0.33);
+    top: -15px !important;
+    .ui.vertical.menu {
+      width: auto;
+      .header {
+        display: block;
+        width: 100%;
+        background: transparent;
+        margin: 0;
+        padding-bottom: 10px;
+        text-transform: initial;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+      }
+      .item {
+        color: #e0e0e0 !important;
+        &:before {
+          background: none;
+        }
+      }
+      .close-popup {
+        position: absolute;
+        color: #fff;
+        right: 5px;
+        top: 10px;
+        text-shadow: none;
+        z-index: 1;
+      }
+    }
+  }
+}

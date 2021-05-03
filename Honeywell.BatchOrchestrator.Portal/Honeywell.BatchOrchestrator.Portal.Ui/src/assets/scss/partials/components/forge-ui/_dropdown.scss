@@ -1,0 +1,16 @@
+//
+// Scuf overrides
+//
+
+// Dropdowns
+
+// Themes
+html.honeywell-dark-theme {
+  $theme: 'dark';
+  @include forge-dropdown($theme);
+}
+
+html:not(.honeywell-dark-theme) {
+  $theme: 'light';
+  @include forge-dropdown($theme);
+}

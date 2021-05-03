@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------------------------------
+// @ Border helpers
+// -----------------------------------------------------------------------------------------------------
+$border-style: 1px solid rgba(0, 0, 0, 0.12);
+
+@each $position in ('top', 'right', 'bottom', 'left') {
+  @for $index from 0 through 8 {
+    .border-#{$position}-#{$index} {
+      border-#{$position}-width: #{$index}px;
+      border-#{$position}-style: solid;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------------------------
+// @ Cursor helpers
+// -----------------------------------------------------------------------------------------------------
+// Cursor default
+.cursor-default {
+  cursor: default;
+}
+
+// Cursor pointer
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// Cursor Not Allowed
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+// Cursor move
+.cursor-move {
+  cursor: move;
+}
+
+// -----------------------------------------------------------------------------------------------------
+// @ Display Property helpers
+// -----------------------------------------------------------------------------------------------------
+.d-block {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+.visibility-hidden {
+  visibility: hidden !important;
+}

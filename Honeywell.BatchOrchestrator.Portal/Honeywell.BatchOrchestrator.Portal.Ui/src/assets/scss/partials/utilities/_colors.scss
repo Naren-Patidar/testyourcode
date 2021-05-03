@@ -1,0 +1,18 @@
+// Color theme grays
+@each $color, $value in $grays {
+  .text-#{$color} {
+    color: $value;
+  }
+  .text-#{$color}-force {
+    color: $value !important;
+  }
+}
+// Color theme grays
+@each $color, $value in $base-theme-palette {
+  .text-#{$color} {
+    color: $value;
+  }
+  .text-#{$color}-force {
+    color: $value !important;
+  }
+}

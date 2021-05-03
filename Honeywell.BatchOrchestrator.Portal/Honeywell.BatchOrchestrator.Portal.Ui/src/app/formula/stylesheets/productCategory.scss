@@ -1,0 +1,63 @@
+@import "../../../assets/stylesheets/colors.scss";
+@import "../../../assets/stylesheets/fonts.scss";
+
+
+* {
+  box-sizing: border-box;
+}
+
+.ProductCategory {
+  // background-color: $containerBgColor;
+  .ProductCategory-favorites {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .ProductCategory-favorites-title {
+      align-self: center;
+    }
+
+    .ProductCategory-favorites-right {
+      justify-self: right;
+      padding-right: 1rem;
+      position: relative;
+      .ProductCategory-favorites-right-button {
+        background-color: $greyBorderColor;
+        border: 0px solid $greyBorderColor;
+        border-radius: 20px;
+        color: $whiteColor;
+        text-transform: none;
+      }
+      .ProductCategory-favorites-right-menu {
+        position: absolute;
+        top: 40px;
+        display: grid;
+        background-color: $greyBorderColor;
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 10rem;
+        margin-right: 1vw;
+        border: 0.1px solid $operatingMode_LOCAL;
+        visibility: hidden;
+        ul {
+          li {
+            list-style: none;
+            line-height: 2rem;
+            &:hover {
+              background-color: $containerBgColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// .ui.active.visible.selection.dropdown .visible.menu.transition{
+//   border: .0625rem solid $blackColor;
+//   position: relative;
+//   top: -2px;
+//   left: -0.97vw;
+//   width: 15vw;
+// }

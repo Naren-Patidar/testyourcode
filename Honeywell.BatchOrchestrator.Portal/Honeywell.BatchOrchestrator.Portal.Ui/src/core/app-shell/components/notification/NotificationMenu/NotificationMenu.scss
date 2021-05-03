@@ -1,0 +1,123 @@
+@import './../../../../../assets/stylesheets/fonts.scss';
+@import './../../../../../assets/stylesheets/colors.scss';
+
+.page-header-menu {
+  .bell-icon {
+    width: 28px;
+  }
+  .ui.label.badge.red.notification-count {
+    background-color: #ee3124 !important;
+    border-radius: 4px !important;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+  }
+}
+
+.notification-menu-wrapper {
+  position: fixed;
+  top: 0rem;
+  right: 0em;
+  width: 350px;
+  max-height: 100%;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+  z-index: 1002 !important;
+  background: #272727 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 40px #00000066;
+  height: 100%;
+  transition: transform 0.3s ease-out 0s !important;
+  will-change: transform;
+  transform: translateX(0%);
+  &.collapsed {
+    transform: translateX(100%);
+  }
+  .close {
+    float: right;
+    font-size: 0.75rem !important;
+    color: #fff;
+    opacity: 1;
+    text-shadow: none;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+  .accordion.ui.fluid {
+    max-height: 87vh;
+    overflow-y: auto;
+    .title {
+      padding-left: 0rem !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      position: relative;
+      .cat-badge {
+        position: absolute;
+        left: -10px;
+      }
+    }
+    .active.content {
+      padding-right: 0 !important;
+      position: relative;
+      .clearall-btn {
+        position: absolute;
+        top: -40px;
+        left: 20%;
+      }
+    }
+  }
+  .card {
+    background-color: #272727 !important;
+    margin: 0 !important;
+    .header {
+      padding-top: 0;
+      padding-right: 0;
+      .unread-msg {
+        position: absolute;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        &.green {
+          .h-icon.common {
+            color: #4dbc48;
+          }
+        }
+        &.red {
+          .h-icon.common {
+            color: #fd644c;
+          }
+        }
+      }
+      .new-msg {
+        position: absolute;
+        left: -25px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .content {
+      color: #c0c0c0;
+      padding: 0.5rem 1rem 0rem !important;
+      font-weight: 100;
+      .max-content {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .ui.button.link {
+        padding: 0 !important;
+        min-width: auto !important;
+        height: 15px !important;
+        min-height: 15px !important;
+      }
+      .readmore-action {
+        visibility: hidden;
+      }
+      &:hover {
+        .readmore-action {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.btn-group .dropdown-menu {
+  border-radius: 10px !important;
+  margin-left: 10px !important;
+  background: #303030 !important;
+  padding: 1.5rem 2rem !important;
+  min-width: 250px !important;
+  // border-radius: 5px;
+  box-shadow: 0 2px 30px 2px rgba(0, 0, 0, 0.33) !important;
+
+  &.import-task {
+    padding: 0.5rem 1rem !important;
+    width: 100%;
+    .dd-title {
+      color: #c7c7c7 !important;
+      display: flex;
+      justify-content: space-between;
+      h6 {
+        font-weight: 600 !important;
+      }
+      .close {
+        position: absolute;
+        right: 15px;
+        color: #fff;
+        text-shadow: none;
+        top: 10px;
+        font-size: 0.75rem !important;
+        opacity: 1;
+        // color: #d0d0d0 !important;
+        :hover {
+          color: #fff !important;
+        }
+      }
+    }
+    .error-msg {
+      color: #ff644c !important;
+    }
+  }
+
+  .ui.scuf-dropdown-wrapper {
+    width: 100% !important;
+    height: auto !important;
+    .ui.selection.dropdown {
+      background: $containerBgColor !important;
+      padding: 0.438rem 0.5rem 2rem 0.75rem !important;
+      border: 1px solid transparent !important;
+      .visible.menu.transition {
+        top: 7px !important;
+        left: -10px !important;
+      }
+    }
+  }
+}

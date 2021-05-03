@@ -1,0 +1,9 @@
+body.unauthorized-access {
+  background-image: url(../../../../assets/images/authorization.png) !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important ;
+  * {
+    background: transparent;
+  }
+}

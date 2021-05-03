@@ -1,0 +1,125 @@
+//
+// Bootstrap extended functions
+//
+
+//
+// Base theme functions
+//
+@function theme-color($key: 'primary') {
+  @return get($theme-colors, $key);
+}
+
+@function theme-inverse-color($key: 'primary') {
+  @return get($theme-inverse-colors, $key);
+}
+
+@function theme-outline-inverse-color($key: 'primary') {
+  @return get($theme-outline-inverse-colors, $key);
+}
+
+@function theme-hover-color($key: 'primary') {
+  @return get($theme-hover-colors, $key);
+}
+
+@function theme-light-color($key: 'primary') {
+  @return get($theme-light-colors, $key);
+}
+
+@function theme-shadow-color($key: 'primary') {
+  @return get($theme-shadow-colors, $key);
+}
+
+//
+// Forge Theme functions
+//
+@function get-forge-theme-color($theme: 'dark', $key: 'primary') {
+  @if ($theme== 'dark') {
+    @return get($dark-forge-theme, $key);
+  } @else if ($theme== 'light') {
+    @return get($light-forge-theme, $key);
+  }
+  @return get($dark-forge-theme, $key);
+}
+
+@function forge-theme-color($theme: 'dark', $key: 'primary') {
+  @return get-forge-theme-color($theme, $key);
+}
+
+@function base-theme-palette-color($key: 'primary-dark') {
+  @return get($base-theme-palette, $key);
+}
+
+@function hover-theme-palette-color($key: 'primary-dark') {
+  @return get($hover-theme-palette, $key);
+}
+
+@function active-theme-palette-color($key: 'primary-dark') {
+  @return get($active-theme-palette, $key);
+}
+
+@function disabled-theme-palette-color($key: 'primary-dark') {
+  @return get($disabled-theme-palette, $key);
+}
+
+@function inverse-theme-palette-color($key: 'primary-dark') {
+  @return get($inverse-theme-palette, $key);
+}
+
+@function hover-inverse-theme-palette-color($key: 'primary-dark') {
+  @return get($hover-inverse-theme-palette, $key);
+}
+
+@function active-inverse-theme-palette-color($key: 'primary-dark') {
+  @return get($active-inverse-theme-palette, $key);
+}
+
+@function disabled-inverse-theme-palette-color($key: 'primary-dark') {
+  @return get($disabled-inverse-theme-palette, $key);
+}
+
+@function outline-inverse-theme-palette-color($key: 'primary-dark') {
+  @return get($outline-inverse-theme-palette, $key);
+}
+
+@function outline-disabled-inverse-theme-palette-color($key: 'primary-dark') {
+  @return get($outline-disabled-inverse-theme-palette, $key);
+}
+
+@function gray-accent-color($key: 'dark-000') {
+  @return get($grays, $key);
+}
+
+// @function forge-theme-outline-color($theme: "dark", $key: "primary") {
+//   @return get($theme-outline-inverse-colors, $key);
+// }
+
+// @function forge-theme-outline-inverse-color($theme: "dark", $key: "primary") {
+//   @return get($theme-outline-inverse-colors, $key);
+// }
+
+// @function forge-theme-hover-color($theme: "dark", $key: "primary") {
+//   @return get-forge-theme-color($theme, $key);
+// }
+
+// @function forge-theme-active-color($theme: "dark", $key: "primary") {
+//   @return get-forge-theme-color($theme, $key);
+// }
+
+// @function forge-theme-light-color($theme: "dark", $key: "primary") {
+//   @return get($theme-light-colors, $key);
+// }
+
+// @function forge-theme-shadow-color($theme: "dark", $key: "primary") {
+//   @return get($theme-shadow-colors, $key);
+// }
+
+// @function forge-theme-gray-color($theme: "dark", $key: "gray-dark-000") {
+//   @return get-forge-theme-color($theme, $key);
+// }
+
+@function forge-theme-gradient-color(
+  $theme: 'dark',
+  $key: 'primary-gradient-2'
+) {
+  @return get-forge-theme-color($theme, $key);
+}

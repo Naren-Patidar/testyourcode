@@ -1,0 +1,121 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.btn-group .dropdown-menu {
+  &.safety-list {
+    padding: 0.5rem 0rem 0.5rem 1.5rem !important;
+    width: 100%;
+    .dd-title {
+      color: #c7c7c7;
+      display: flex;
+      justify-content: space-between;
+      h6 {
+        font-weight: 600;
+      }
+      .close {
+        right: 15px;
+        top: 10px;
+        position: absolute;
+        font-size: 0.75rem !important;
+        color: #fff;
+        opacity: 1;
+        text-shadow: none;
+      }
+    }
+    .scuf-list-wrapper {
+      max-height: 45vh;
+      overflow-y: auto;
+      .item {
+        padding-bottom: 5px !important;
+        position: relative;
+        padding-right: 20px;
+        .ui.single-input > .input-wrap > input {
+          height: 1.5rem;
+          border-radius: 0 !important;
+          background-color: #202020 !important;
+          width: 100%;
+        }
+        .header {
+          display: none;
+        }
+        .close {
+          display: none;
+          position: absolute;
+          right: 7px;
+          color: #fff;
+          text-shadow: none;
+          top: 8px;
+          font-size: 0.75rem !important;
+          opacity: 1;
+        }
+        .safety-cursor-hover {
+          cursor: pointer;
+        }
+        .ui.checkbox {
+          margin: 0;
+          width: auto;
+          input ~ label {
+            padding-left: 25px;
+          }
+        }
+        &:hover {
+          .close {
+            display: block;
+          }
+        }
+        .safetyicon {
+          &.ear-protection {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ Ear\ small.svg');
+          }
+          &.hard-hat {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ helmet\ small.svg');
+          }
+          &.gloves {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ gloves\ small.svg');
+          }
+          &.ventilation {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ vent\ small.svg');
+          }
+          &.safety-boots {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ boots\ small.svg');
+          }
+          &.respirator {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ respirator\ small.svg');
+          }
+          &.overalls {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ overalls\ small.svg');
+          }
+          &.vest {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ vest\ small.svg');
+          }
+          &.eye-protection {
+            background-image: url('../../../../assets/icons/safetyIcons/icons\ _\ safety\ _\ eye\ protection\ small.svg');
+          }
+          &.safety-custom {
+            background-image: url('../../../../assets/icons/safetyIcons/icon\ _\ Info.svg');
+            background-position: center 3px;
+          }
+          background-repeat: no-repeat;
+          padding: 15px 25px 2px 0px;
+          background-position: center;
+        }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .safetyicon {
+            padding: 0;
+            width: 25px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .add-safety-btn {
+      color: $grayLabledColor;
+      cursor: pointer;
+    }
+    .error-msg {
+      color: #ff644c;
+    }
+  }
+  border-radius: 10px;
+  margin-left: 10px;
+}

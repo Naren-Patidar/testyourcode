@@ -1,0 +1,228 @@
+@import '../../../assets/stylesheets/colors.scss';
+@import '../../../assets/stylesheets/fonts.scss';
+@import '../../../../src/assets/fonts/hw-abpm-icons.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.ApplicationSettings {
+  // display: grid;
+  // display: -ms-grid;
+  // padding-left: 0.75rem;
+  // -ms-grid-columns: 1fr;
+  // grid-template-columns: 1fr;
+  // color: $SmokeWhiteColor !important;
+  // position: relative;
+  // background: #1c1c1c !important;
+  // min-height: 50vh;
+  // border-radius: 8px;
+  // margin-left: 1.5rem;
+  // margin-right: 1.5rem;
+  // border-radius: 8px;
+  // font-weight: 400;
+  .ApplicationSettings_main {
+    // display: grid;
+    // display: -ms-grid;
+    // grid-template-columns: 1fr;
+    // -ms-grid-columns: 1fr;
+    // //grid-auto-rows: 5vh;
+    // width: auto;
+    // margin-top: 1rem;
+    // padding-left: 1rem;
+    .ApplicationSettings_heading {
+      // display: grid;
+      // display: -ms-grid;
+      // grid-template-columns: 1fr;
+      // -ms-grid-columns: 1fr;
+      .ApplicationSettings_heading_title {
+        // font-family: $bold;
+        // font-size: 20px;
+        // margin-top: 1rem;
+        // Button {
+        //   background: transparent 0% 0% no-repeat padding-box;
+        //   border-radius: 4px !important;
+        //   border: 1px solid #45a7ea;
+        //   opacity: 1;
+        //   font-size: 14px;
+        //   color: #45a7ea;
+        //   text-transform: none;
+        //   margin-left: 4.8rem;
+        //   margin-right: 1rem;
+        //   position: relative;
+        // }
+        .errorMessage {
+          float: left;
+          color: #ff644c !important;
+          font-size: 14px;
+          font-weight: bold;
+          margin-left: 0.2rem;
+          margin-top: 0.3rem;
+          position: absolute;
+          left: 21%;
+        }
+      }
+      .ApplicationSettings_heading_subTitle {
+        // font-size: 18px;
+        // margin-top: 1rem;
+      }
+
+      .ApplicationSettings_heading_button {
+        // display: grid;
+        // display: -ms-grid;
+        // grid-template-columns: 1fr 1fr;
+        // -ms-grid-columns: 1fr 1fr;
+        // margin-top: 1rem;
+        // Button {
+        //   background: transparent 0% 0% no-repeat padding-box;
+        //   border-radius: 4px !important;
+        //   border: 1px solid #45a7ea;
+        //   opacity: 1;
+        //   font-size: 14px;
+        //   color: #45a7ea;
+        //   text-transform: none;
+        //   margin-left: 4.8rem;
+        //   margin-right: 1rem;
+        // }
+
+        .errorMessage {
+          float: left;
+          color: #ff644c !important;
+          font-size: 14px;
+          font-weight: bold;
+          margin-left: 0.2rem;
+          margin-top: 0.3rem;
+        }
+      }
+    }
+  }
+  .ApplicationSettings_table {
+    // display: grid;
+    // display: -ms-grid;
+    // grid-template-columns: 35%;
+    // -ms-grid-columns: 35%;
+    // grid-auto-rows: 6vh;
+    // // width: 25%;
+    // margin-top: 2rem;
+    // padding-left: 2rem;
+
+    // .ApplicationSettings_saveChanges{
+    //     display: grid;
+    //     grid-auto-rows: 30px;
+    //     justify-self: end;
+    //     Button {
+    //         background: #808080 0% 0% no-repeat padding-box;
+    //         border-radius: 4px !important;
+    //         border: 1px solid  #808080;
+    //         opacity: 1;
+    //         margin-right: 1rem;
+    //     }
+    // }
+    .ApplicationSettings_inputs {
+      // display: grid;
+      // display: -ms-grid;
+      // grid-template-columns: 1fr;
+      // -ms-grid-columns: 1fr;
+      // margin-bottom: 5px;
+      // grid-auto-rows: 35px;
+      .ApplicationSettings_inputs_row {
+        // height: 40px;
+        // width: 10rem;
+
+        span {
+          font-family: $bold;
+          font-size: 16px;
+          margin-right: 4px;
+        }
+        // div {
+        //     margin-right: 1rem;
+        input {
+          height: 4vh;
+          width: 10rem;
+          //  width: 100%;
+          padding-left: 4px;
+          border-radius: 4px;
+          border: 1px solid grey;
+          background-color: $hoverBgColor;
+          color: $popUpTextValueColor;
+          font-family: $medium;
+          font-size: 0.875rem;
+          color: #f0f0f0;
+          border-color: #606060;
+          float: right;
+          text-align: center;
+          margin-left: 4px;
+        }
+
+        // .ui.scuf-dropdown-wrapper {
+        //   border: 0 !important;
+
+        //   .ui.selection.dropdown {
+        //     height: 4vh !important;
+        //   }
+        // }
+        // .ui.scuf-dropdown-wrapper,
+        // .ui.scuf-dropdown-wrapper > .ui.selection.dropdown {
+        //   width: 10rem !important;
+        // }
+        // .ui.scuf-dropdown-wrapper,
+        // .ui.scuf-dropdown-wrapper > .ui.selection.dropdown {
+        //   height: 5vh;
+        //   //  width: 100%;
+        //   //  padding-left: 4px;
+        //   border-radius: 4px;
+        //   border: 1px solid grey;
+        //   background-color: $hoverBgColor;
+        //   color: $popUpTextValueColor;
+        //   font-family: $medium;
+        //   font-size: 0.875rem;
+        //   color: #f0f0f0;
+        //   border-color: #606060;
+        //   float: right;
+        //   text-align: center;
+        //   width: 10rem !important;
+        // }
+        // }
+      }
+    }
+  }
+}
+.AppSettings {
+  input {
+    height: 4vh;
+    width: 12rem;
+    //  width: 100%;
+    padding-left: 4px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: $hoverBgColor;
+    color: $popUpTextValueColor;
+    font-family: $medium;
+    font-size: 0.875rem;
+    color: #f0f0f0;
+    border-color: #606060;
+    // float: right;
+    text-align: center;
+    // margin-left: 4px;
+  }
+  .batch-removal {
+    .batch-removal-header {
+      font-size: 14px;
+      color: #f0f0f0;
+    }
+    .batch-removal-desc {
+      font-size: 12px;
+      color: #f0f0f0;
+    }
+  }
+}
+
+.app-settings-error {
+  border: 2px solid #ff644c !important;
+}
+// .ui.scuf-dropdown-wrapper {
+//   width: 12rem !important;
+// }
+.bg-app-container {
+  background-color: #1c1c1c !important;
+}

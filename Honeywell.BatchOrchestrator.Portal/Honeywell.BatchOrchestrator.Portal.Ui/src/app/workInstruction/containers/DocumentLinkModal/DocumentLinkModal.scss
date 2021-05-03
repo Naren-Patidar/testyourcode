@@ -1,0 +1,101 @@
+@import '../../../../assets/stylesheets/colors.scss';
+@import '../../../../assets/stylesheets/fonts.scss';
+
+.btn-group .dropdown-menu {
+  border-radius: 10px !important;
+  margin-left: 10px !important;
+
+  &.link-doc {
+    padding: 0.5rem 1.3rem !important;
+    min-width: 300px !important;
+    .dd-title {
+      color: #c7c7c7 !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      h6 {
+        font-weight: 600 !important;
+      }
+      .close {
+        position: absolute;
+        right: 15px;
+        color: #fff;
+        text-shadow: none;
+        top: 10px;
+        font-size: 0.75rem !important;
+        opacity: 1;
+      }
+    }
+    .single-input {
+      .input-box {
+        border-radius: 0 !important;
+        height: 25px !important;
+        background-color: #202020 !important;
+        border: none !important;
+      }
+      &.error {
+        .below-text {
+          display: block;
+        }
+      }
+      .below-text {
+        display: none;
+      }
+    }
+    .input-label-message {
+      font-weight: 400 !important;
+    }
+    .ui.scuf-dropdown-wrapper {
+      margin-bottom: 10px !important;
+    }
+    .scuf-list-wrapper {
+      max-height: 25vh !important;
+      overflow-y: auto !important;
+      margin: 5px 0 !important;
+      .item {
+        display: flex;
+        align-items: center;
+        .h-icon.common {
+          font-size: 1rem !important;
+          color: #a8a8a8 !important;
+        }
+        .header {
+          white-space: nowrap !important;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+          max-width: 225px !important;
+          text-align: left !important;
+          font-weight: 400 !important;
+          color: #f0f0f0 !important;
+          padding: 0 !important;
+          font-size: 12px !important;
+          display: block;
+        }
+      }
+    }
+    .remove-alldocs {
+      .input-label-message {
+        cursor: pointer !important;
+        color: #1792e5 !important;
+        font-family: HoneywellSans-Medium !important;
+      }
+    }
+  }
+
+  .ui.scuf-dropdown-wrapper {
+    width: 100% !important;
+    height: auto !important;
+    .ui.selection.dropdown {
+      background: $containerBgColor;
+      padding: 0.438rem 0.5rem 2rem 0.75rem !important;
+      border: 1px solid transparent !important;
+      .visible.menu.transition {
+        top: 7px;
+        left: -10px;
+      }
+    }
+  }
+}
+
+.ui.small.button.primary.mt-4 {
+  margin-top: 1.5rem !important;
+}
